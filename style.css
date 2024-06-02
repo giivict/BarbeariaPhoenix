@@ -1,0 +1,43 @@
+/* Inicio */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Variável global */
+:root{
+    --preto: #1C1C1C;
+    --cinza: #CCCBCB;
+    --verde: #2A463A;
+    --fonte-texto: Montserrat;
+}
+
+/* Menu Principal */
+#principal{
+  background-color: var(--cinza);
+  display: flex;
+  align-items: center;
+}
+
+#logoNav{
+    height: 45px;
+    width: 225px;
+    margin:10px 30px 10px 40px;
+}
+
+#principal div a{
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--preto);
+    font-family: Montserrat;
+    font-weight: 400;
+    
+}
+
+#principal div a:hover {
+    color: white;
+}
+
+.menu a{
+    padding-left: 80px;
+}
