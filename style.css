@@ -130,3 +130,7 @@ header a #arrow{
     align-items: center;
     justify-content: center;
 }
+
+header a:hover{
+    color: white;
+}
