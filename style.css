@@ -9,12 +9,21 @@ figure{
     margin: 0;
 }
 
+h1{
+    font-weight: 400;
+    font-size: 30px;
+}
+
 /* Variável global */
 :root{
     --preto: #1C1C1C;
     --cinza: #CCCBCB;
     --verde: #2A463A;
     --fonte-texto: Montserrat;
+}
+
+#paginainteira{
+    background-color: var(--cinza);
 }
 
 /* Menu Principal */
@@ -58,7 +67,7 @@ header #bcgddentro{
 
 #bcgdPaginaPrincipal{
     background-color: var(--cinza);
-    padding: 0px 80px 20px 80px;
+    padding: 0px 80px 200px 80px;
 }
 
 #img img{
@@ -88,11 +97,7 @@ header #bcgddentro{
 }
 
 header h1{
-    font-family: var(--fonte-texto);
-    font-weight: 400;
-    font-size: 30px;
     margin: 0px 20px;
-    
 }
 
 figure #logo2{
@@ -134,3 +139,44 @@ header a #arrow{
 header a:hover{
     color: white;
 }
+
+/* Separador */
+
+#separador{
+   text-align: center;
+   font-size: 40px;
+   margin-top: 0px;
+   margin-bottom: 200px;
+}
+
+/* Sobre */
+
+section{
+    display: flex;
+}
+
+#bcgdpreto{
+    background-color: var(--preto);
+    margin-right: 105px;
+    margin-bottom: 70px;
+}
+
+section #bcgdpreto img{
+    width: 70%;
+    margin-left: 250px;
+    margin-top: 80px;
+}
+
+.content{
+    font-size: 12px;
+    text-align: justify;
+    max-width: 500px;
+}
+
+#tittletext{
+    margin-right: 150px;
+    padding-bottom: 60px;
+}
+
+
+
