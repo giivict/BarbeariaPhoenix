@@ -37,7 +37,7 @@ h1{
 #logoNav{
     height: 45px;
     width: 225px;
-    margin:10px;
+    margin: 10px;
 }
 
 #principal div a{
@@ -54,7 +54,7 @@ h1{
 }
 
 .menu a{
-    padding-left: 90px;
+    padding-left: 110px;
 }
 
 /* Página Principal */
@@ -90,14 +90,14 @@ header #bcgddentro{
 
 #bcgdcinza{
     background-color: var(--cinza);
-    margin-top: 130px;
+    margin-top: 150px;
     margin-right: 100px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     padding-right: 10px;
 }
 
 header h1{
-    margin: 0px 20px;
+    margin: 10px 20px;
 }
 
 figure #logo2{
@@ -110,7 +110,7 @@ figure #logo2{
 
 #agendar{
     display: inline-flex;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 10px;
     margin-left: 10px;
     justify-content: center;
@@ -164,7 +164,7 @@ section{
 section #bcgdpreto img{
     width: 70%;
     margin-left: 250px;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .content{
@@ -175,8 +175,5 @@ section #bcgdpreto img{
 
 #tittletext{
     margin-right: 150px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
-
-
-
