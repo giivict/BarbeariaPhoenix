@@ -13,7 +13,9 @@ h1{
     font-weight: 400;
     font-size: 30px;
 }
-
+ h3{
+    font-weight: 400;
+ }
 /* Variável global */
 :root{
     --preto: #1C1C1C;
@@ -177,3 +179,55 @@ section #bcgdpreto img{
     margin-right: 150px;
     padding-bottom: 80px;
 }
+
+/* Equipe */
+
+
+#equipe{
+    display: flex;
+    flex-direction: column;
+}
+
+#equipe-tittle{
+    text-align: left;
+    margin-left: 100px;
+}
+
+section ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 40px;
+    
+}
+section ul li img{
+    width: auto;
+}
+
+ul li h3{
+    text-align: center;
+}
+
+ul li img{
+    transition: transform 0.3s;
+}
+
+ul li img:hover{
+    transform: scale(1.1);
+}
+
+section .text{
+    display: none;
+    width: 50%;
+    background-color: var(--verde);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: justify;
+    color: var(--cinza);
+    margin: 10px 275px;
+}
+
+section .text img{
+    width: 25%;
+    margin-right: 50px;
+}
+
