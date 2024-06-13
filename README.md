@@ -1,7 +1,7 @@
 # BarbeariaPhoenix
 Criação de uma landing page para Barbearia Phoenix, com o objetivo de analisar as métricas através do google analytics, para conseguir entender como atrair mais cliente. Foi criada utilizando HTML, CSS E JavaScript.
 
-Protótipo de site a principil com algumas fotos que irão ser modificada
+Protótipo de site a principal com algumas coisas que irão ser modificada
 
 ![foto1](https://github.com/giivict/BarbeariaPhoenix/assets/155773727/a4b39925-8fd2-420e-ae6b-64a6db46a573)
 
