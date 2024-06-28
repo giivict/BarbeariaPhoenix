@@ -207,11 +207,12 @@ section ul li {
 
 section ul li img {
     width: auto;
-    margin-bottom: 20px;
+    
 }
 
 ul li h3 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 ul li img {
@@ -248,25 +249,24 @@ section .text img {
     align-items: center;
     text-align: center;
     width: 100%;
-    
+    margin-top: 60px;
 }
 
 section #serv-titulo {
     color: var(--cinza);
     text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
 }
 
-.service-list-wrapper {
-    overflow: hidden;
-    width: 100%;
-}
 
 .service-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
     gap: 20px;
-    transition: transform 0.5s ease;
+    overflow: hidden;
+    margin-bottom: 60px;
+   
 }
 
 .service-item {
@@ -280,6 +280,7 @@ section #serv-titulo {
     flex-direction: column;
     justify-content: space-between;
     
+    
 }
 
 .servico p{
@@ -290,7 +291,7 @@ section #serv-titulo {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    
 }
 
 .arrow{
@@ -304,7 +305,7 @@ section #serv-titulo {
 }
 
 .arrow:hover {
-    transform: translateX(10px);
+    transform: translateX(5px);
 }
 
 #left-arrow {
@@ -312,7 +313,7 @@ section #serv-titulo {
 }
 
 #left-arrow:hover {
-    transform: translateX(-10px);
+    transform: translateX(-5px);
 }
 
 .service-item button{
@@ -322,4 +323,52 @@ section #serv-titulo {
     border-radius: 10px;
     font-family: var(--fonte-texto);
     font-size: 10px;
+}
+
+/* Feedback */
+
+#feedback{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+#feedback-itens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.fb{
+    border: 5px solid var(--preto);
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px black;
+   width: auto;
+   padding: 10px;
+   text-align: center;
+   width: 350px; 
+   height: 200px;
+}
+
+.fb p{
+font-size: 15px;
+text-align: justify;
+}
+
+.fb h3{
+    text-align: left;
+}
+
+
+
+.fb .star{
+    margin-top: 20px;
+}
+
+#feedback h1{
+    text-align: right;
+    margin-right: 150px;
+    margin-top: 100px;
+    margin-bottom: 40px;
 }
