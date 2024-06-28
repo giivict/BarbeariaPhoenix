@@ -1,96 +1,98 @@
 /* Inicio */
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: var(--fonte-texto);
 }
 
-figure{
+figure {
     margin: 0;
 }
 
-h1{
+h1 {
     font-weight: 400;
     font-size: 30px;
 }
- h3{
+
+h3 {
     font-weight: 400;
- }
+}
+
 /* Variável global */
-:root{
+:root {
     --preto: #1C1C1C;
     --cinza: #CCCBCB;
     --verde: #2A463A;
     --fonte-texto: Montserrat;
 }
 
-#paginainteira{
+#paginainteira {
     background-color: var(--cinza);
 }
 
 /* Menu Principal */
-#principal{
-  background-color: var(--cinza);
-  display: flex;
-  align-items: center;
-  padding-bottom: 0px;
+#principal {
+    background-color: var(--cinza);
+    display: flex;
+    align-items: center;
+    padding-bottom: 0px;
 }
 
-#logoNav{
+#logoNav {
     height: 45px;
     width: 225px;
     margin: 10px;
 }
 
-#principal div a{
+#principal div a {
     font-size: 13px;
     text-decoration: none;
     color: var(--preto);
     font-family: Montserrat;
     font-weight: 400;
-    
+
 }
 
 #principal div a:hover {
     color: white;
 }
 
-.menu a{
+.menu a {
     padding-left: 110px;
 }
 
 /* Página Principal */
 
-header #bcgddentro{
+header #bcgddentro {
     display: flex;
     justify-content: center;
 
 }
 
-#bcgdPaginaPrincipal{
+#bcgdPaginaPrincipal {
     background-color: var(--cinza);
     padding: 0px 80px 200px 80px;
 }
 
-#img img{
-    width: 90%;  
-    display: flex;   
+#img img {
+    width: 90%;
+    display: flex;
 }
 
-#imgmeio{
-    padding-left: 100px;   
+#imgmeio {
+    padding-left: 100px;
 }
 
-#baixocima{
+#baixocima {
     padding-top: 60px;
 }
 
-#bcgddentro{
+#bcgddentro {
     background-color: var(--verde);
     padding-bottom: 50px;
 }
 
-#bcgdcinza{
+#bcgdcinza {
     background-color: var(--cinza);
     margin-top: 150px;
     margin-right: 100px;
@@ -98,19 +100,19 @@ header #bcgddentro{
     padding-right: 10px;
 }
 
-header h1{
+header h1 {
     margin: 10px 20px;
 }
 
-figure #logo2{
-   width: 25%;
-   margin-top: 30px;
-   margin-left: 170px;
-   margin-bottom: 0px;
-   padding: 0
+figure #logo2 {
+    width: 25%;
+    margin-top: 30px;
+    margin-left: 170px;
+    margin-bottom: 0px;
+    padding: 0
 }
 
-#agendar{
+#agendar {
     display: inline-flex;
     margin-top: 40px;
     padding: 10px;
@@ -119,7 +121,8 @@ figure #logo2{
     align-items: center;
     justify-content: center;
 }
-header a{
+
+header a {
     font-family: var(--fonte-texto);
     font-weight: 300;
     text-decoration: none;
@@ -130,7 +133,7 @@ header a{
 }
 
 
-header a #arrow{
+header a #arrow {
     margin-left: 15px;
     font-size: 40px;
     display: inline-flexbox;
@@ -138,44 +141,46 @@ header a #arrow{
     justify-content: center;
 }
 
-header a:hover{
+header a:hover {
     color: white;
 }
 
 /* Separador */
 
-#separador{
-   text-align: center;
-   font-size: 40px;
-   margin-top: 0px;
-   margin-bottom: 200px;
+figure #separador {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    margin-top: 0px;
+    margin-bottom: 200px;
 }
 
 /* Sobre */
 
-section{
+section {
     display: flex;
 }
 
-#bcgdpreto{
+#bcgdpreto {
     background-color: var(--preto);
     margin-right: 105px;
     margin-bottom: 70px;
 }
 
-section #bcgdpreto img{
+section #bcgdpreto img {
     width: 70%;
     margin-left: 250px;
     margin-top: 35px;
 }
 
-.content{
+.content {
     font-size: 12px;
     text-align: justify;
     max-width: 500px;
 }
 
-#tittletext{
+#tittletext {
     margin-right: 150px;
     padding-bottom: 80px;
 }
@@ -183,39 +188,41 @@ section #bcgdpreto img{
 /* Equipe */
 
 
-#equipe{
+#equipe {
     display: flex;
     flex-direction: column;
 }
 
-#equipe-tittle{
+#equipe-tittle {
     text-align: left;
     margin-left: 100px;
 }
 
-section ul li{
+section ul li {
     list-style-type: none;
     display: inline-block;
     margin: 0 40px;
-    
-}
-section ul li img{
-    width: auto;
+
 }
 
-ul li h3{
+section ul li img {
+    width: auto;
+    margin-bottom: 20px;
+}
+
+ul li h3 {
     text-align: center;
 }
 
-ul li img{
+ul li img {
     transition: transform 0.3s;
 }
 
-ul li img:hover{
+ul li img:hover {
     transform: scale(1.1);
 }
 
-section .text{
+section .text {
     display: none;
     width: 50%;
     background-color: var(--verde);
@@ -224,11 +231,78 @@ section .text{
     text-align: justify;
     color: var(--cinza);
     margin: 10px 275px;
+    margin-bottom: 50px;
 }
 
-section .text img{
+section .text img {
     width: 25%;
     margin-right: 50px;
 }
 
 /* Serviço */
+#serv {
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+section #serv-titulo {
+    color: var(--cinza);
+    text-align: center;
+}
+
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-item {
+    background-color: var(--cinza);
+    border-radius: 8px;
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+    font-size: 10px;
+    
+}
+
+.servico p{
+    margin: 5px 0;
+}
+
+#services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.arrow:hover {
+    transform: translateX(10px);
+    font-size: 30px;
+}
+#left-arrow:hover {
+    transform: translateX(-10px);
+    font-size: 30px;
+}
+
+.service-item button{
+    background-color: var(--preto);
+    color: var(--cinza);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: var(--fonte-texto);
+    font-size: 10px;
+}
