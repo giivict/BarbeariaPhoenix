@@ -24,17 +24,17 @@
                     <img id="logoNav" src="/Imagens/logo.png" alt="logo">
                 </figure>
                 <div class="menu">
-                    <a href="">PÁGINA PRINCIPAL</a>
-                    <a href="">SOBRE</a>
-                    <a href="">EQUIPE</a>
-                    <a href="">SERVIÇOS</a>
-                    <a href="">CONTATO</a>
+                    <a href="#principal">PÁGINA PRINCIPAL</a>
+                    <a href="#sobre">SOBRE</a>
+                    <a href="#equipe">EQUIPE</a>
+                    <a href="#serv">SERVIÇOS</a>
+                    <a href="#final">CONTATO</a>
                 </div>
             </nav>
         </div>
 
         <!-- Página Inicial -->
-        <header>
+        <header id="paginaInicial">
             <div id="bcgdPaginaPrincipal">
                 <div id="bcgddentro">
                     <figure id="img">
@@ -55,7 +55,7 @@
                         <div>
                             <div>
                                 <h4>
-                                    <a id="agendar" href="">Agendar um horário <span id="arrow">→</span></a>
+                                    <a id="agendar" target="_blank" href="https://booksy.com/pt-br/251262_phoenix-barbearia_barbearias_1047773_sao-paulo#ba_s=sh_1">Agendar um horário <span id="arrow">→</span></a>
                                 </h4>
                             </div>
                         </div>
@@ -64,11 +64,12 @@
         </header>
 
         <!-- Separador -->
-        <figure>
+
+        <!-- <figure>
             <img id="separador" src="/Imagens/tesoura.png"> </img>
-        </figure>
+        </figure> -->
         <!-- Sobre -->
-        <section>
+        <section id="sobre">
             <figure id="bcgdpreto">
                 <img src="/Imagens/sobre.png" alt="">
             </figure>
@@ -344,6 +345,31 @@
                     </div>
                 </div>
             </section>
+            <footer id="final">
+                <h1>CONTATO</h1>
+                <div id="footer">
+                    <div id="address">
+                        <h3>Endereço</h3>
+                        <a href="https://www.google.com/maps/dir//-23.6533216,-46.6566026/@-23.6533733,-46.7389492,12z?entry=ttu"><img src="Imagens/endereço.svg" alt=""></a>
+                    </div>
+                    <div id="cont">
+                        <h3>Horario de Funcionamento</h3>
+                        <p>09:00 - 20:00</p>
+
+                        <h3 id="ct">Contate-nos</h3>
+
+                        <div class="contact">                        
+                        <a href="https://www.instagram.com/_phoenixbarbearia/" target="_blank"><img src="Imagens/instagram.svg" alt=""></a>
+                        </div>
+
+                        <div class="contact">
+                            <a href="https://api.whatsapp.com/send?phone=5511964538195" target="_blank"><img src="Imagens/whatsapp.svg" alt=""></a>
+                        </div>
+                    </div>   
+                </div>
+                <img id="logofooter" class="ft" src="Imagens/logofooter.svg" alt="">
+                <p class="ft">© 2024 Barbearia Phoenix. Todos os direitos reservados.</p>
+            </footer>
     </div>
     <script src="script.js"></script>
 </body>
