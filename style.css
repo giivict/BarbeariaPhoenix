@@ -158,87 +158,87 @@ figure #separador {
 
 /* Sobre */
 
-section {
-    display: flex;
-}
+    section {
+        display: flex;
+    }
 
-#bcgdpreto {
-    background-color: var(--preto);
-    margin-right: 105px;
-    margin-bottom: 70px;
-}
+    #bcgdpreto {
+        background-color: var(--preto);
+        margin-right: 105px;
+        margin-bottom: 70px;
+    }
 
-section #bcgdpreto img {
-    width: 70%;
-    margin-left: 250px;
-    margin-top: 35px;
-}
+    section #bcgdpreto img {
+        width: 70%;
+        margin-left: 250px;
+        margin-top: 35px;
+    }
 
-.content {
-    font-size: 12px;
-    text-align: justify;
-    max-width: 500px;
-}
+    .content {
+        font-size: 12px;
+        text-align: justify;
+        max-width: 500px;
+    }
 
-#tittletext {
-    margin-right: 150px;
-    padding-bottom: 80px;
-}
+    #tittletext {
+        margin-right: 150px;
+        padding-bottom: 80px;
+    }
 
-/* Equipe */
+    /* Equipe */
 
 
-#equipe {
-    display: flex;
-    flex-direction: column;
-}
+    #equipe {
+        display: flex;
+        flex-direction: column;
+    }
 
-#equipe-tittle {
-    text-align: left;
-    margin-left: 100px;
-}
+    #equipe-tittle {
+        text-align: left;
+        margin-left: 100px;
+    }
 
-section ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0 40px;
+    section ul li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 40px;
 
-}
+    }
 
-section ul li img {
-    width: auto;
-    
-}
+    section ul li img {
+        width: auto;
+        
+    }
 
-ul li h3 {
-    text-align: center;
-    margin-bottom: 20px;
-}
+    ul li h3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
-ul li img {
-    transition: transform 0.3s;
-}
+    ul li img {
+        transition: transform 0.3s;
+    }
 
-ul li img:hover {
-    transform: scale(1.1);
-}
+    ul li img:hover {
+        transform: scale(1.1);
+    }
 
-section .text {
-    display: none;
-    width: 50%;
-    background-color: var(--verde);
-    border-radius: 15px;
-    padding: 40px;
-    text-align: justify;
-    color: var(--cinza);
-    margin: 10px 275px;
-    margin-bottom: 50px;
-}
+    section .text {
+        display: none;
+        width: 50%;
+        background-color: var(--verde);
+        border-radius: 15px;
+        padding: 40px;
+        text-align: justify;
+        color: var(--cinza);
+        margin: 10px 275px;
+        margin-bottom: 50px;
+    }
 
-section .text img {
-    width: 25%;
-    margin-right: 50px;
-}
+    section .text img {
+        width: 25%;
+        margin-right: 50px;
+    }
 
 /* Serviço */
 #serv {
@@ -466,6 +466,10 @@ header #bcgdcinza {
     margin-bottom: 25px;
 }
 
+#bcgddentro {
+    margin-bottom: 150px;
+}
+
 header h1 {
     margin: 15px 20px 0;
     font-size: 10px;
@@ -506,6 +510,82 @@ header a #arrow {
     margin-left: 10px;
     font-size: 20px;
     
+}
+
+/* Sobre */
+
+
+#bcgdpreto {
+    margin-right: 0px;
+    margin-bottom:40px;
+    
+}
+
+section #bcgdpreto img {
+    margin-left: 30px;
+    width: 100%;
+    margin-top: 80px;    
+}
+
+#sobre h1{
+font-size: 10px;
+margin-left: 60px;
+}
+
+.content {
+    font-size: 7px;
+    width: 100%;
+    margin-left: 60px;
+   
+}
+
+#tittletext {
+    margin-right: 80px;
+    padding-bottom: 40px;
+}
+
+/* Equipe */
+
+
+
+#equipe-tittle {
+    font-size: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+section ul {
+  display: block;
+  padding: 0;
+  margin: 0 32px 0;
+  
+}
+
+section ul li img {
+    width: 100px;
+    margin: 0px;   
+    
+}
+
+ul li h3 {
+    font-size: 7px;
+    text-align: center;
+    margin-top: 5px;
+    padding: 0;
+    
+}
+
+section .text {
+    width: 70%;
+    font-size: 7px;
+    padding: 20px;
+    margin: 20px auto 0 auto;
+   
+}
+
+section .text img {
+    width: 15%;
+    margin-right: 30px;
 }
 
 
