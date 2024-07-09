@@ -74,22 +74,43 @@ header #bcgddentro {
     padding: 0px 80px 200px 80px;
 }
 
+
+#img{
+    position: relative;
+    
+}
+
 #img img {
     width: 90%;
-    display: flex;
+    
 }
 
-#imgmeio {
+.imgmeio {
     padding-left: 100px;
+    display: none;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+
 }
 
-#baixocima {
+.imgmeio.active {
+    display: block;
+}
+
+#partcima {
     padding-top: 60px;
+    margin-bottom: -4px;
+}
+
+#partbaixo{
+    margin-top: 560px;
 }
 
 #bcgddentro {
     background-color: var(--verde);
     padding-bottom: 50px;
+    
 }
 
 #bcgdcinza {
@@ -98,6 +119,7 @@ header #bcgddentro {
     margin-right: 100px;
     margin-bottom: 100px;
     padding-right: 10px;
+    position: relative;
 }
 
 header h1 {
@@ -276,9 +298,8 @@ section #serv-titulo {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    gap: 70px;
-   
-    
+    gap: 70px;   
+    /* transition: transform 0.5s ease;  */
 }
 
 .service-item {
@@ -291,9 +312,7 @@ section #serv-titulo {
     font-size: 10px;
     justify-content: space-around;
     box-sizing: border-box;
-    width: 180px;
-    
-    
+    width: 180px;    
 }
 
 .servico p{
@@ -316,9 +335,7 @@ section #serv-titulo {
     font-size: 30px;
     cursor: pointer;
     margin-top: 100px;
-    position: absolute;
-    
-    
+    position: absolute;    
 }
 
 #left-arrow{

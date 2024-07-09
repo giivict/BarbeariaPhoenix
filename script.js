@@ -1,3 +1,29 @@
+// Página Principal
+
+let currentIndex = 0;
+
+function showNextImage() {
+    const images = document.querySelectorAll('.imgmeio');
+    images.forEach((image, index) => {
+        image.classList.remove('active');
+        if (index === currentIndex) {
+            image.classList.add('active');
+        }
+    });
+    currentIndex = (currentIndex + 1) % images.length;
+}
+
+// Chama a função para iniciar o carrossel
+setInterval(showNextImage, 3000); // Muda a cada 3 segundos
+
+// Inicializa a primeira imagem como visível quando a página carrega
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.imgmeio')[0].classList.add('active');
+});
+
+
+
+
 // Equipe
 
 function showText(id) {
