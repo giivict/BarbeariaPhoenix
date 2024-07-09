@@ -2,7 +2,7 @@
 
 function showText(id) {
     var texts = document.querySelectorAll('.text');
-    texts.forEach(function(text) {
+    texts.forEach(function (text) {
         text.style.display = 'none';
     });
 
@@ -31,6 +31,7 @@ function updateServices() {
     });
     document.getElementById('left-arrow').style.display = currentPage === 0 ? 'none' : 'block';
     document.getElementById('right-arrow').style.display = currentPage === totalPages - 1 ? 'none' : 'block';
+
 }
 
 function nextPage() {
@@ -48,4 +49,3 @@ function prevPage() {
 }
 
 updateServices();
-

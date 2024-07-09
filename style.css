@@ -250,6 +250,9 @@ figure #separador {
     text-align: center;
     width: 100%;
     margin-top: 60px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 60px;
 }
 
 section #serv-titulo {
@@ -259,26 +262,36 @@ section #serv-titulo {
     padding-top: 30px;
 }
 
+.services-wrapper {
+    justify-content: center;
+    align-items: center;
+}
 
 .service-list{
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
     overflow: hidden;
-    margin-bottom: 60px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 70px;
    
+    
 }
 
 .service-item {
+    display: flex;
     background-color: var(--cinza);
     border-radius: 8px;
     padding: 20px;
     margin: 20px;
     text-align: center;
     font-size: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 180px;
     
     
 }
@@ -291,6 +304,8 @@ section #serv-titulo {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    position: relative;
     
 }
 
@@ -300,20 +315,28 @@ section #serv-titulo {
     color: var(--cinza);
     font-size: 30px;
     cursor: pointer;
-    margin: 0 10px;
+    margin-top: 100px;
+    position: absolute;
+    
     
 }
 
-.arrow:hover {
-    transform: translateX(5px);
+#left-arrow{
+    left: 150px;
 }
 
-#left-arrow {
-    display: none;
+#right-arrow{
+    right: 150px;
 }
+
+.arrow:hover {
+    transform: translateY(5px);
+}
+
+
 
 #left-arrow:hover {
-    transform: translateX(-5px);
+    transform: translateY(5px);
 }
 
 .service-item button{
@@ -323,6 +346,9 @@ section #serv-titulo {
     border-radius: 10px;
     font-family: var(--fonte-texto);
     font-size: 10px;
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
 }
 
 /* Feedback */
@@ -428,7 +454,7 @@ footer .contact:hover{
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
     
 /* Menu Nav */
 
@@ -557,7 +583,7 @@ margin-left: 60px;
 section ul {
   display: block;
   padding: 0;
-  margin: 0 32px 0;
+  margin: 0 35px 0;
   
 }
 

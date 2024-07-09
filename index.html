@@ -55,7 +55,9 @@
                         <div id="ag">
                             <div id="agendamento">
                                 <h4>
-                                    <a id="agendar" target="_blank" href="https://booksy.com/pt-br/251262_phoenix-barbearia_barbearias_1047773_sao-paulo#ba_s=sh_1">Agendar um horário <span id="arrow">→</span></a>
+                                    <a id="agendar" target="_blank"
+                                        href="https://booksy.com/pt-br/251262_phoenix-barbearia_barbearias_1047773_sao-paulo#ba_s=sh_1">Agendar
+                                        um horário <span id="arrow">→</span></a>
                                 </h4>
                             </div>
                         </div>
@@ -101,15 +103,15 @@
 
             <ul>
                 <li onclick="showText('texto1')">
-                    <img src="/Imagens/pedro.svg" alt=""> 
+                    <img src="/Imagens/pedro.svg" alt="">
                     <h3>Pedro</h3>
                 </li>
                 <li onclick="showText('texto2')">
-                    <img src="/Imagens/miguel.svg" alt=""> 
+                    <img src="/Imagens/miguel.svg" alt="">
                     <h3>Miguel</h3>
                 </li>
                 <li onclick="showText('texto3')">
-                    <img src="/Imagens/marcus.svg" alt=""> 
+                    <img src="/Imagens/marcus.svg" alt="">
                     <h3>Marcus</h3>
                 </li>
                 <li onclick="showText('texto4')">
@@ -194,136 +196,137 @@
             <!-- Serviço -->
             <section id="serv">
                 <h1 id="serv-titulo">Serviços</h1>
+                <button class="arrow" onclick="prevPage()" id="left-arrow">&#10094;</button>
+
                 <div id="services">
-                    <button class="arrow" onclick="prevPage()" id="left-arrow">&#10094;</button>
+                    <div class="services-wrapper">
+                        <div class="service-list">
+                            <div class="service-item" id="serv1">
+                                <p>Corte Atual (Degrade)</p>
+                                <p>50 min</p>
+                                <p>R$ 40</p>
+                                <button>Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv2">
+                                <p>Corte e Sobrancelha</p>
+                                <p>1 h</p>
+                                <p>R$ 45</p>
+                                <button>Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv2">
+                                <p> Corte e Barba</p>
+                                <p> 1 h 20 min </p>
+                                <p> R$ 60 </p>
+                                <button>Agendar um horário</button>
+                            </div>
 
-                    <div class="service-list">
-                        <div class="service-item" id="serv1">
-                            <p>Corte Atual (Degrade)</p>
-                            <p>50 min</p>
-                            <p>R$ 40</p>
-                            <button>Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv2">
-                            <p>Corte e Sobrancelha</p>
-                            <p>1 h</p>
-                            <p>R$ 45</p>
-                            <button>Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv2">
-                            <p> Corte e Barba</p>
-                            <p> 1 h 20 min </p>
-                            <p> R$ 60 </p>
-                            <button>Agendar um horário</button>
-                        </div>
-
-                        <div class="service-item" id="serv4">
-                            <p>Corte e Depilação Nasal</p>
-                            <p>55 min</p>
-                            <p>R$ 55</p>
-                            <button>Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv5">
-                            <p>Corte e Hidratação</p>
-                            <p>1 h</p>
-                            <p>R$ 55</p>
-                            <button>Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv6">
-                            <p>Corte, Barba e Sobrancelha</p>
-                            <p>1 h 10 min</p>
-                            <p>R$ 65</p>
-                            <button>Agendar um horário</button>
-                        </div>
-
-
-                        <div class="service-item" id="serv7">
-                            <p>Luzes</p>
-                            <p>2 h</p>
-                            <p>R$ 80</p>
-                            <button>Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv8">
-                            <p>Platinado</p>
-                            <p>3 h 30 min</p>
-                            <p>R$ 120</p>
-                            <button>Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv9">
-                            <p>Corte e Progressiva</p>
-                            <p>2 h 20 min</p>
-                            <p>R$ 99</p>
-                            <button>Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv10">
-                            <p>Barba</p>
-                            <p>30 min</p>
-                            <p>R$ 30</p>
-                            <button>Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv11">
-                            <p>Corte e Alisamento</p>
-                            <p>1 h 10 min</p>
-                            <p>R$ 70</p>
-                            <button>Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv12">
-                            <p>Progressiva</p>
-                            <p>1 h 30 min</p>
-                            <p>R$ 80</p>
-                            <button>Agendar um horário</button>
+                            <div class="service-item" id="serv4">
+                                <p>Corte e Depilação Nasal</p>
+                                <p>55 min</p>
+                                <p>R$ 55</p>
+                                <button>Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv5">
+                                <p>Corte e Hidratação</p>
+                                <p>1 h</p>
+                                <p>R$ 55</p>
+                                <button>Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv6">
+                                <p>Corte, Barba e Sobrancelha</p>
+                                <p>1 h 10 min</p>
+                                <p>R$ 65</p>
+                                <button>Agendar um horário</button>
+                            </div>
                         </div>
 
+                        <div class="service-list">
+                            <div class="service-item" id="serv7">
+                                <p>Luzes</p>
+                                <p>2 h</p>
+                                <p>R$ 80</p>
+                                <button>Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv8">
+                                <p>Platinado</p>
+                                <p>3 h 30 min</p>
+                                <p>R$ 120</p>
+                                <button>Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv9">
+                                <p>Corte e Progressiva</p>
+                                <p>2 h 20 min</p>
+                                <p>R$ 99</p>
+                                <button>Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv10">
+                                <p>Barba</p>
+                                <p>30 min</p>
+                                <p>R$ 30</p>
+                                <button>Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv11">
+                                <p>Corte e Alisamento</p>
+                                <p>1 h 10 min</p>
+                                <p>R$ 70</p>
+                                <button>Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv12">
+                                <p>Progressiva</p>
+                                <p>1 h 30 min</p>
+                                <p>R$ 80</p>
+                                <button>Agendar um horário</button>
+                            </div>
+                        </div>
 
-
-                        <div class="service-item" id="serv13">
-                            <p>Botox</p>
-                            <p>1 h</p>
-                            <p>R$ 50</p>
-                            <button>Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv14">
-                            <p>Alisamento</p>
-                            <p>20 min</p>
-                            <p>R$ 4</p>
-                            <button>Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv15">
-                            <p>Corte e Luzes</p>
-                            <p>2 h 50 min</p>
-                            <p>R$ 110</p>
-                            <button>Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv16">
-                            <p>Sobrancelha</p>
-                            <p>10 min</p>
-                            <p>R$ 5</p>
-                            <button>Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv17">
-                            <p>Limpeza de Pele</p>
-                            <p>15 min</p>
-                            <p>R$ 18</p>
-                            <button>Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv18">
-                            <p>Hidratação</p>
-                            <p>5 min</p>
-                            <p>R$ 20</p>
-                            <button>Agendar um horário</button>
+                        <div class="service-list">
+                            <div class="service-item" id="serv13">
+                                <p>Botox</p>
+                                <p>1 h</p>
+                                <p>R$ 50</p>
+                                <button>Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv14">
+                                <p>Alisamento</p>
+                                <p>20 min</p>
+                                <p>R$ 4</p>
+                                <button>Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv15">
+                                <p>Corte e Luzes</p>
+                                <p>2 h 50 min</p>
+                                <p>R$ 110</p>
+                                <button>Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv16">
+                                <p>Sobrancelha</p>
+                                <p>10 min</p>
+                                <p>R$ 5</p>
+                                <button>Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv17">
+                                <p>Limpeza de Pele</p>
+                                <p>15 min</p>
+                                <p>R$ 18</p>
+                                <button>Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv18">
+                                <p>Hidratação</p>
+                                <p>5 min</p>
+                                <p>R$ 20</p>
+                                <button>Agendar um horário</button>
+                            </div>
                         </div>
                     </div>
-
-
-
-                    <button class="arrow" onclick="nextPage()" id="right-arrow">&#10095;</button>
                 </div>
+                <button class="arrow" onclick="nextPage()" id="right-arrow">&#10095;</button>
+
             </section>
 
             <!-- Feedback -->
             <section id="feedback">
                 <h1>Feedback</h1>
-                
+
                 <div id="feedback-itens">
                     <div class="fb">
                         <h3>Guilherme C.</h3>
@@ -350,7 +353,9 @@
                 <div id="footer">
                     <div id="address">
                         <h3>Endereço</h3>
-                        <a target="_blank" href="https://www.google.com/maps/dir//-23.6533216,-46.6566026/@-23.6533733,-46.7389492,12z?entry=ttu"><img src="Imagens/endereço.svg" alt=""></a>
+                        <a target="_blank"
+                            href="https://www.google.com/maps/dir//-23.6533216,-46.6566026/@-23.6533733,-46.7389492,12z?entry=ttu"><img
+                                src="Imagens/endereço.svg" alt=""></a>
                     </div>
                     <div id="cont">
                         <h3>Horario de Funcionamento</h3>
@@ -358,14 +363,16 @@
 
                         <h3 id="ct">Contate-nos</h3>
 
-                        <div class="contact">                        
-                        <a href="https://www.instagram.com/_phoenixbarbearia/" target="_blank"><img src="Imagens/instagram.svg" alt=""></a>
+                        <div class="contact">
+                            <a href="https://www.instagram.com/_phoenixbarbearia/" target="_blank"><img
+                                    src="Imagens/instagram.svg" alt=""></a>
                         </div>
 
                         <div class="contact">
-                            <a href="https://api.whatsapp.com/send?phone=5511964538195" target="_blank"><img src="Imagens/whatsapp.svg" alt=""></a>
+                            <a href="https://api.whatsapp.com/send?phone=5511964538195" target="_blank"><img
+                                    src="Imagens/whatsapp.svg" alt=""></a>
                         </div>
-                    </div>   
+                    </div>
                 </div>
                 <img id="logofooter" class="ft" src="Imagens/logofooter.svg" alt="">
                 <p class="ft">© 2024 Barbearia Phoenix. Todos os direitos reservados.</p>
