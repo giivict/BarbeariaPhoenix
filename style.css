@@ -475,7 +475,38 @@ footer .contact:hover {
 
 }
 
-@media only screen and (max-width: 425px) {
+@media (hover:none){
+
+
+    #principal div a:hover {
+        color: initial;
+    }
+
+    header a:hover {
+        color: initial;
+    }
+
+    ul li img:hover {
+        transform: initial;
+    }
+
+    .arrow:hover {
+        transform: initial;
+    }
+       
+    
+    #left-arrow:hover {
+        transform: initial;
+    }
+
+    footer .contact:hover {
+        transform: initial;
+    
+    }
+    
+}
+
+@media (max-width: 600px) {
 
     /* Menu Nav */
 
@@ -525,15 +556,16 @@ footer .contact:hover {
     }
 
     #img {
+        margin-top: 16%;
         width: 60%;
     }
 
     #partcima {
-        padding-top: 40px;
+        display: none;
     }
 
     #partbaixo {
-        margin-top: 178px;
+        display: none;
     }
 
     figure #logo2 {
@@ -623,13 +655,11 @@ footer .contact:hover {
 
     section ul {
         display: block;
-        padding: 0;
         margin: 0;
-
     }
 
     section ul li img {
-        width: 90px;
+        width: 85px;
         margin: 0px;
     }
 
@@ -763,10 +793,10 @@ footer .contact:hover {
 
     footer h3 {
         font-size: 8px;
-       
+
     }
 
-    footer #address{
+    footer #address {
         margin-left: 10px;
     }
 
@@ -776,7 +806,7 @@ footer .contact:hover {
     }
 
 
-    #address img{
+    #address img {
         width: 150px;
     }
 
@@ -789,7 +819,7 @@ footer .contact:hover {
         margin-top: 10px;
     }
 
-    footer .contact img{
+    footer .contact img {
         width: 70px;
     }
 
@@ -797,7 +827,220 @@ footer .contact:hover {
         transform: translateY(-5px);
 
     }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+      /* Menu Principal */
+    .menu a {
+        padding-left: 20px;
+    }
+
+    /* Pagina Principal */
+
+    #img {
+        width: 100%;
+        margin-top: 7%;
+    }
+
+    #partcima {
+        display: none;
+    }
+
+    #partbaixo {
+        display: none;
+    }
+
+    #bcgddentro {
+        width: 120%;
+        margin-right: 1%;
+        margin-left: -10%;
+    }
+
+    header #bcgdcinza {
+
+        margin-top: 80px;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 30px;
+        width: 30%;
+    }
+
+    #agendar {
+        margin-top: 20px;
+        padding: 0px;
+    }
+
+     /* Sobre */
+
+     #sobre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #bcgdpreto {
+        margin: 0px;
+        width: 100%;
+        margin: 0;
+    }
+
+    section #bcgdpreto img {
+        margin-left: 150px;
+        width: 60%;
+        margin-bottom: 30px;
+        
+    }
+
+    #sobre h1 {
+        
+        margin-left: 60px;
+        text-align: center;
+    }
+
+    .content {
+        
+        width: 90%;
+        text-align: justify;
+        margin-left: 140px;
+
+    }
+
+    #tittletext {
+        margin-right: 80px;
+        padding-bottom: 40px;
+    }
+
+    /* Equipe */
 
 
+    #equipe-tittle {
+        
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
 
+    section ul li img {
+        width: 90px;
+        margin: 0px;
+    }
+
+    ul li h3 {
+        
+        text-align: center;
+        margin-top: 5px;
+        padding: 0;
+
+    }
+
+    section .text {
+        width: 80%;
+        font-size: 15px;
+        padding: 20px;
+        margin: 20px auto 0 auto;
+
+    }
+
+    section .text img {
+        width: 10%;
+        margin-right: 30px;
+    }
+
+     /* Serviços */
+
+    .service-list {
+       gap: 25px;
+    }
+
+    .arrow {
+
+        margin-top: 130px;
+
+    }
+
+    #left-arrow {
+        left: 0px;
+    }
+
+    #right-arrow {
+        right: 0px;
+    }
+
+    .service-item button {
+        padding: 4px;
+        font-size: 5px;
+        width: 65%;
+
+    }
+    /* Feedback */
+
+    #feedback-itens {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .fb {
+
+        padding: 10px;
+        margin: 5px;
+        width: 200px;
+        height: 130px;
+    }
+
+    .fb p {
+        font-size: 9px;
+    }
+
+    .fb h3 {
+        font-size: 15px;
+    }
+
+    .fb .estrela {
+        width: 150px;
+    }
+
+    .fb #star1 {
+        margin-top: 10px;
+    }
+
+
+    .fb .star {
+        margin-top: 20px;
+    }
+
+    #feedback h1 {
+        margin-right: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+
+    /* Footer */
+
+    footer {
+        margin: 10px 20px 30px 20px;
+    }
+
+    footer #address {
+        margin-left: 10px;
+    }
+
+  
+
+    footer #ct {
+        margin-top: 40px;
+    }
+
+
+    footer .contact:hover {
+        transform: none;
+
+    }
+
+    @media screen {
+        
+    }
 }
