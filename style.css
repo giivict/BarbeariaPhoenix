@@ -71,7 +71,7 @@ header #bcgddentro {
 
 #bcgdPaginaPrincipal {
     background-color: var(--cinza);
-    padding: 0px 80px 200px 80px;
+    padding: 0px 80px;
 }
 
 
@@ -108,7 +108,15 @@ header #bcgddentro {
 }
 
 #bcgddentro {
-    background-color: var(--verde);
+    background-image: linear-gradient(
+        180deg,
+        #2A463A 60%,
+        #2b473b 17%,
+        #1c1c1c
+        
+    
+    
+    );
     padding-bottom: 50px;
 
 }
@@ -117,7 +125,7 @@ header #bcgddentro {
     background-color: var(--cinza);
     margin-top: 150px;
     margin-right: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     padding-right: 10px;
     position: relative;
 }
@@ -167,44 +175,113 @@ header a:hover {
     color: white;
 }
 
-/* Separador
+/* Separador */
 
-figure #separador {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 15%;
-    margin-top: 0px;
-    margin-bottom: 200px;
-} */
 
-/* Sobre */
-
-section {
-    display: flex;
-}
-
-#bcgdpreto {
+/* Serviço */
+#serv {
+    
     background-color: var(--preto);
-    margin-right: 105px;
-    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 0px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    
 }
 
-section #bcgdpreto img {
-    width: 70%;
-    margin-left: 250px;
-    margin-top: 35px;
+section #serv-titulo {
+    color: var(--cinza);
+    text-align: center;
+    padding-top: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
 }
 
-.content {
-    font-size: 12px;
-    text-align: justify;
-    max-width: 500px;
+.services-wrapper {
+    justify-content: center;
+    align-items: center;
 }
 
-#tittletext {
-    margin-right: 150px;
-    padding-bottom: 80px;
+.service-list {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 40px;
+}
+
+.service-item {
+    display: flex;
+    background-color: var(--cinza);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-size: 10px;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 180px;
+}
+
+.servico p {
+    margin: 5px 0;
+}
+
+#services {
+    display: flex;    
+    overflow: hidden;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    color: var(--cinza);
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 140px;
+    position: absolute;
+}
+
+#left-arrow {
+    left: 50px;
+}
+
+#right-arrow {
+    right: 50px;
+}
+
+.arrow:hover {
+    transform: translateY(5px);
+}
+
+
+
+#left-arrow:hover {
+    transform: translateY(5px);
+}
+
+.service-item button {
+    background-color: var(--preto);
+    color: var(--cinza);
+    padding: 8px;
+    border-radius: 10px;
+    font-family: var(--fonte-texto);
+    font-size: 10px;
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
 }
 
 /* Equipe */
@@ -216,6 +293,7 @@ section #bcgdpreto img {
 }
 
 #equipe-tittle {
+    margin-top: 150px;
     text-align: left;
     margin-left: 100px;
 }
@@ -263,111 +341,33 @@ section .text img {
     margin-right: 50px;
 }
 
-/* Serviço */
-#serv {
-    background-color: var(--verde);
+/* Sobre */
+
+section {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    margin-top: 60px;
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 60px;
 }
 
-section #serv-titulo {
-    color: var(--cinza);
-    text-align: center;
-    margin-top: 40px;
-    padding-top: 30px;
-    text-transform: uppercase;
-}
-
-.services-wrapper {
-    justify-content: center;
-    align-items: center;
-}
-
-.service-list {
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    overflow: hidden;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    gap: 70px;
-    /* transition: transform 0.5s ease;  */
-}
-
-.service-item {
-    display: flex;
-    background-color: var(--cinza);
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
-    font-size: 10px;
-    justify-content: space-around;
-    box-sizing: border-box;
-    width: 180px;
-}
-
-.servico p {
-    margin: 5px 0;
-}
-
-#services {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-
-}
-
-.arrow {
-    background: none;
-    border: none;
-    color: var(--cinza);
-    font-size: 30px;
-    cursor: pointer;
-    margin-top: 100px;
-    position: absolute;
-}
-
-#left-arrow {
-    left: 150px;
-}
-
-#right-arrow {
-    right: 150px;
-}
-
-.arrow:hover {
-    transform: translateY(5px);
-}
-
-
-
-#left-arrow:hover {
-    transform: translateY(5px);
-}
-
-.service-item button {
+#bcgdpreto {
     background-color: var(--preto);
-    color: var(--cinza);
-    padding: 8px;
-    border-radius: 10px;
-    font-family: var(--fonte-texto);
-    font-size: 10px;
-    width: 100%;
-    position: relative;
-    white-space: nowrap;
+    margin-right: 105px;
+    margin-bottom: 70px;
+}
+
+section #bcgdpreto img {
+    width: 70%;
+    margin-left: 250px;
+    margin-top: 35px;
+}
+
+.content {
+    font-size: 12px;
+    text-align: justify;
+    max-width: 500px;
+}
+
+#tittletext {
+    margin-right: 150px;
+    padding-bottom: 80px;
 }
 
 /* Feedback */
@@ -1039,8 +1039,17 @@ footer .contact:hover {
         transform: none;
 
     }
+}
 
-    @media screen {
-        
-    }
+@media (min-width: 1920px){
+        /* Menu Principal */
+        #principal div a{
+            font-size: 20px;
+        }
+        .menu a {
+            padding-left: 200px;
+            
+        }
+    
+
 }

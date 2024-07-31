@@ -21,22 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.imgmeio')[0].classList.add('active');
 });
 
-
-
-
-// Equipe
-
-function showText(id) {
-    var texts = document.querySelectorAll('.text');
-    texts.forEach(function (text) {
-        text.style.display = 'none';
-    });
-
-    var textToShow = document.getElementById(id);
-    textToShow.style.display = 'block';
-    textToShow.scrollIntoView({ block: 'center' });
-}
-
 // Serviços
 
 let currentPage = 0;
@@ -75,3 +59,27 @@ function prevPage() {
 }
 
 updateServices();
+
+function enviarMensagem(servico) {
+    const numeroTelefone = '5511964538195';
+    const mensagem = `Olá, gostaria de marcar um horário para realizar ${servico}`;
+    const link = `https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagem)}`;
+    window.open(link, '_blank');
+}
+
+
+
+// Equipe
+
+function showText(id) {
+    var texts = document.querySelectorAll('.text');
+    texts.forEach(function (text) {
+        text.style.display = 'none';
+    });
+
+    var textToShow = document.getElementById(id);
+    textToShow.style.display = 'block';
+    textToShow.scrollIntoView({ block: 'center' });
+}
+
+
