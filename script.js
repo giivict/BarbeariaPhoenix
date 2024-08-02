@@ -2,15 +2,32 @@
 
 let currentIndex = 0;
 
-function showNextImage() {
+function showImage(index) {
     const images = document.querySelectorAll('.imgmeio');
-    images.forEach((image, index) => {
+    const dots = document.querySelectorAll('.dot');
+    images.forEach((image, i) => {
         image.classList.remove('active');
-        if (index === currentIndex) {
+        dots[i].classList.remove('active');
+        if (i === index) {
             image.classList.add('active');
+            dots[i].classList.add('active');
         }
     });
-    currentIndex = (currentIndex + 1) % images.length;
+}
+
+function showNextImage() {
+    currentIndex = (currentIndex + 1) % document.querySelectorAll('.imgmeio').length;
+    showImage(currentIndex);
+}
+
+function showPreviousImage() {
+    currentIndex = (currentIndex - 1 + document.querySelectorAll('.imgmeio').length) % document.querySelectorAll('.imgmeio').length;
+    showImage(currentIndex);
+}
+
+function currentSlide(index) {
+    currentIndex = index;
+    showImage(index);
 }
 
 // Chama a função para iniciar o carrossel
@@ -18,7 +35,7 @@ setInterval(showNextImage, 3000); // Muda a cada 3 segundos
 
 // Inicializa a primeira imagem como visível quando a página carrega
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.imgmeio')[0].classList.add('active');
+    showImage(0);
 });
 
 // Serviços
