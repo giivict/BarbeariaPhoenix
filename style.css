@@ -100,10 +100,10 @@ header #bcgddentro {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 42%;
     width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    margin-top: -5%;
+    padding: 3%;
     color: white;
     font-weight: bold;
     font-size: 125%;
@@ -120,7 +120,7 @@ header #bcgddentro {
 
 .dots {
     text-align: center;
-    padding: 10px;
+    padding: 1%;
     
     position: absolute;
     width: 100%;
@@ -130,7 +130,7 @@ header #bcgddentro {
     display: flex;
     justify-content: center;
     gap: 1%;
-    margin-bottom: 15%;
+    margin-bottom: 17vw;
 }
 
 .dot {
@@ -147,26 +147,17 @@ header #bcgddentro {
     background-color: var(--preto); 
 }
 
-/* #partcima {
-    padding-top: 60px;
-    margin-bottom: -4px;
-}
-
-#partbaixo {
-    margin-top: 560px;
-} */
-
 #bcgddentro {
     background-image: linear-gradient(
         180deg,
-        #2A463A 60%,
+        #2A463A 70%,
         #2b473b 17%,
         #1c1c1c
         
     
     
     );
-    padding-bottom: 50px;
+    padding-bottom: 5%;
 
 }
 
@@ -174,7 +165,7 @@ header #bcgddentro {
     background-color: var(--cinza);
     margin-top: 150px;
     margin-right: 5%;
-    margin-bottom: 200px;
+    margin-bottom: 300px;
     padding-right: 10px;
     position: relative;
 }
@@ -223,8 +214,6 @@ header a #arrow {
 header a:hover {
     color: white;
 }
-
-/* Separador */
 
 
 /* Serviço */
@@ -331,6 +320,7 @@ section #serv-titulo {
     width: 100%;
     position: relative;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 /* Equipe */
@@ -570,7 +560,7 @@ footer .contact:hover {
     }
 
     .menu a {
-        padding-left: 15px;
+        padding-left: 17px;
     }
 
     /* Menu Principal */
@@ -580,22 +570,20 @@ footer .contact:hover {
     }
 
     header #bcgdcinza {
-        margin-top: 60px;
+        margin-top: 8%;
         margin-right: 10px;
         margin-left: 10px;
         padding-right: 10px;
-        margin-bottom: 30px;
+        margin-bottom: 100px;
 
         width: 30%;
     }
 
-    .imgmeio {
-        padding-left: 70px;
-    }
+   
 
     #bcgddentro {
-        margin-bottom: 100px;
-        padding-bottom: 20px;
+        margin-bottom: 10%;
+        padding-bottom: 0%;
     }
 
     header h1 {
@@ -605,17 +593,10 @@ footer .contact:hover {
     }
 
     #img {
-        margin-top: 16%;
         width: 60%;
     }
 
-    #partcima {
-        display: none;
-    }
 
-    #partbaixo {
-        display: none;
-    }
 
     figure #logo2 {
         width: 20%;
@@ -651,6 +632,19 @@ footer .contact:hover {
         margin-left: 10px;
         font-size: 20px;
 
+    }
+
+    .dots {
+       display: none;
+    }
+
+    .prev, .next {
+        top: 35%;    
+        padding: 1%;
+      
+        font-size: 70%;
+        transition: 0.6s ease;
+        user-select: none;
     }
 
     /* Sobre */

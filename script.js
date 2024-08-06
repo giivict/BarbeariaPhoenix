@@ -36,7 +36,20 @@ setInterval(showNextImage, 3000); // Muda a cada 3 segundos
 // Inicializa a primeira imagem como visível quando a página carrega
 document.addEventListener('DOMContentLoaded', () => {
     showImage(0);
+
+    // Configura o Hammer.js para detectar gestos de swipe
+    const carousel = document.querySelector('.carousel-container');
+    const hammer = new Hammer(carousel);
+
+    hammer.on('swipeleft', () => {
+        showNextImage();
+    });
+
+    hammer.on('swiperight', () => {
+        showPreviousImage();
+    });
 });
+
 
 // Serviços
 
