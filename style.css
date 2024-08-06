@@ -131,6 +131,7 @@ header #bcgddentro {
     justify-content: center;
     gap: 1%;
     margin-bottom: 17vw;
+    
 }
 
 .dot {
@@ -582,7 +583,7 @@ footer .contact:hover {
    
 
     #bcgddentro {
-        margin-bottom: 10%;
+        margin-bottom: 0%;
         padding-bottom: 0%;
     }
 
@@ -730,8 +731,11 @@ footer .contact:hover {
     /* Serviços */
 
     #serv {
-        margin-top: 30px;
+        margin-top: 0;
         padding-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        
     }
 
     section #serv-titulo {
