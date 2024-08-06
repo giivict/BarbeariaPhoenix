@@ -1,27 +1,28 @@
 // Página Principal
 
 let currentIndex = 0;
+const images = document.querySelectorAll('.imgmeio');
+const dots = document.querySelectorAll('.dot');
+const container = document.querySelector('.carousel-container');
 
 function showImage(index) {
-    const images = document.querySelectorAll('.imgmeio');
-    const dots = document.querySelectorAll('.dot');
-    images.forEach((image, i) => {
-        image.classList.remove('active');
-        dots[i].classList.remove('active');
+    const offset = -index * 100;
+    container.style.transform = `translateX(${offset}%)`;
+    dots.forEach((dot, i) => {
+        dot.classList.remove('active');
         if (i === index) {
-            image.classList.add('active');
-            dots[i].classList.add('active');
+            dot.classList.add('active');
         }
     });
 }
 
 function showNextImage() {
-    currentIndex = (currentIndex + 1) % document.querySelectorAll('.imgmeio').length;
+    currentIndex = (currentIndex + 1) % images.length;
     showImage(currentIndex);
 }
 
 function showPreviousImage() {
-    currentIndex = (currentIndex - 1 + document.querySelectorAll('.imgmeio').length) % document.querySelectorAll('.imgmeio').length;
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
     showImage(currentIndex);
 }
 
@@ -38,8 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     showImage(0);
 
     // Configura o Hammer.js para detectar gestos de swipe
-    const carousel = document.querySelector('.carousel-container');
-    const hammer = new Hammer(carousel);
+    const hammer = new Hammer(container);
 
     hammer.on('swipeleft', () => {
         showNextImage();
@@ -48,7 +48,32 @@ document.addEventListener('DOMContentLoaded', () => {
     hammer.on('swiperight', () => {
         showPreviousImage();
     });
+
+    let startX = 0;
+    let currentX = 0;
+
+    hammer.on('panstart', (e) => {
+        startX = e.center.x;
+    });
+
+    hammer.on('panmove', (e) => {
+        currentX = e.center.x;
+        const diffX = currentX - startX;
+        const offset = -currentIndex * 100 + (diffX / container.clientWidth) * 100;
+        container.style.transform = `translateX(${offset}%)`;
+    });
+
+    hammer.on('panend', (e) => {
+        if (e.deltaX < -50) {
+            showNextImage();
+        } else if (e.deltaX > 50) {
+            showPreviousImage();
+        } else {
+            showImage(currentIndex);
+        }
+    });
 });
+
 
 
 // Serviços
