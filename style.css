@@ -352,7 +352,7 @@ section ul li img {
 
 ul li h3 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 ul li img {
@@ -373,7 +373,7 @@ section .text {
     text-align: justify;
     color: var(--cinza);
     margin: 10px 275px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 section .text img {
@@ -457,7 +457,8 @@ section #bcgdpreto img {
     text-align: right;
     margin-right: 150px;
     margin-top: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
 }
 
 /* Footer */
@@ -545,6 +546,8 @@ footer .contact:hover {
     }
     
 }
+
+
 
 @media (max-width: 600px) {
 
@@ -673,6 +676,8 @@ footer .contact:hover {
         font-size: 10px;
         margin-left: 60px;
         text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .content {
@@ -695,6 +700,7 @@ footer .contact:hover {
         font-size: 10px;
         margin-left: 20px;
         margin-bottom: 20px;
+        margin-top: 70px;
     }
 
     section ul {
@@ -719,7 +725,7 @@ footer .contact:hover {
         width: 70%;
         font-size: 7px;
         padding: 20px;
-        margin: 20px auto 0 auto;
+        margin: 20px auto 40px auto;
 
     }
 
@@ -760,7 +766,7 @@ footer .contact:hover {
     .arrow {
 
         font-size: 10px;
-        margin-top: 50px;
+        margin-top: 22%;
     }
 
     #left-arrow {
@@ -876,7 +882,7 @@ footer .contact:hover {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1023px){
 
       /* Menu Principal */
     .menu a {
@@ -888,7 +894,15 @@ footer .contact:hover {
     #img {
         width: 100%;
         margin-top: 7%;
+        
     }
+
+    header h1 {
+        
+        font-size: 27px;
+
+    }
+
 
     #partcima {
         display: none;
@@ -906,11 +920,11 @@ footer .contact:hover {
 
     header #bcgdcinza {
 
-        margin-top: 80px;
+        margin-top: 15%;
         margin-right: 10px;
         margin-left: 10px;
         padding-right: 10px;
-        margin-bottom: 30px;
+        margin-bottom: 15%;
         width: 30%;
     }
 
@@ -931,6 +945,7 @@ footer .contact:hover {
         margin: 0px;
         width: 100%;
         margin: 0;
+        margin-top: 10%;
     }
 
     section #bcgdpreto img {
@@ -969,7 +984,7 @@ footer .contact:hover {
     }
 
     section ul li img {
-        width: 90px;
+        width: 100%;
         margin: 0px;
     }
 
@@ -983,21 +998,29 @@ footer .contact:hover {
 
     section .text {
         width: 80%;
-        font-size: 15px;
+        font-size: 20px;
         padding: 20px;
         margin: 20px auto 0 auto;
 
     }
 
     section .text img {
-        width: 10%;
+        width: 20%;
         margin-right: 30px;
     }
 
      /* Serviços */
 
+     #serv {
+        margin-top: 0;
+        padding-bottom: 30px;
+        margin-left: 2%;
+        margin-right: 2%;
+        
+    }
+
     .service-list {
-       gap: 25px;
+       gap: 29px;
     }
 
     .arrow {
@@ -1062,7 +1085,6 @@ footer .contact:hover {
         margin-right: 40px;
         margin-top: 20px;
         margin-bottom: 20px;
-        font-size: 10px;
     }
 
     /* Footer */
