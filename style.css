@@ -865,7 +865,8 @@ footer .contact:hover {
     }
 
     footer #address {
-        margin-left: 10px;
+        width: 90%;
+        margin-left: -20px;
     }
 
     footer #logofooter {
@@ -875,7 +876,7 @@ footer .contact:hover {
 
 
     footer #address img {
-        width: 40%;
+        width: 50%;
         
     }
 
@@ -893,7 +894,7 @@ footer .contact:hover {
     }
 
     footer #cont{
-        padding-right: 30px;
+        padding-left: 60px;
     }
 
     footer .contact:hover {
@@ -944,6 +945,10 @@ footer .contact:hover {
         margin-top: 20px;
         padding: 0px;
     }
+
+    .dots {
+        display: none;
+     }
 
      /* Sobre */
 
@@ -1106,7 +1111,7 @@ footer .contact:hover {
     }
 
     footer #address {
-        margin-left: 10px;
+        margin-left: 50px;
     }
 
   
@@ -1119,6 +1124,10 @@ footer .contact:hover {
     footer .contact:hover {
         transform: none;
 
+    }
+
+    footer #logofooter{
+        width: 15%;
     }
 }
 
