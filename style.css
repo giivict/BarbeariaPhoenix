@@ -1266,9 +1266,293 @@ footer .contact:hover {
         gap: 40px;
     }
 
-      /* Footer */
+    /* Footer */
 
-      footer {
+    footer {
         margin: 10px 20px 30px 20px;
     }
+}
+
+@media (max-width: 1440px) {
+    /* Menu Principal */
+
+    #logoNav {
+        height: 70%;
+        width: 70%;
+        margin-top: 5%;
+        margin-right: -300px;
+
+    }
+
+    #principal div a {
+        font-size: 20px;
+
+
+    }
+
+    .menu a {
+        padding-left: 70px;
+
+    }
+
+    /* Pagina Principal */
+
+    #img {
+        width: 90%;
+        margin-top: 7%;
+
+    }
+
+    #bcgddentro {
+        width: 100%;
+
+    }
+
+    header #bcgdcinza {
+
+        margin-top: 14%;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 25%;
+        width: 50%;
+    }
+
+    #agendar {
+        margin-top: 20px;
+        padding: 0px;
+    }
+
+    .dots {
+        bottom: 8%
+    }
+
+    header h1 {
+        margin: 20px 50px;
+        font-size: 40px;
+    }
+
+    figure #logo2 {
+        width: 20%;
+        margin-top: 10%;
+        margin-left: 65%;
+    }
+
+    #agendar {
+        margin-top: 40px;
+        padding: 10px;
+        margin-left: 50px;
+
+    }
+
+    header a {
+        padding-right: 100px;
+        font-size: 25px;
+
+    }
+
+
+    header a #arrow {
+        margin-left: 15px;
+        font-size: 60px;
+
+    }
+
+    /* Serviços */
+
+
+    section #serv-titulo {
+        font-size: 40px;
+        margin-bottom: 60px;
+    }
+
+
+    .service-item {
+
+        width: 90%;
+        font-size: 18px;
+
+    }
+
+    #serv {
+        margin-left: 80px;
+        margin-right: 80px;
+        max-width: 1440px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .service-list {
+        gap: 50px;
+    }
+
+    .service-item {
+        width: 300px;
+    }
+
+    #left-arrow {
+        left: 30px;
+    }
+
+    #right-arrow {
+        right: 30px;
+
+    }
+
+    .arrow {
+        font-size: 40px;
+
+    }
+
+    .service-item button {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    /* Equipe */
+
+    #equipe-tittle {
+        margin-bottom: 100px;
+        font-size: 40px;
+    }
+
+    section ul li {
+        margin: 0 50px;
+    }
+
+    section ul li img {
+        width: 120%;
+
+    }
+
+    ul li h3 {
+        font-size: 30px;
+        margin-left: 15%;
+        margin-bottom: 40px;
+    }
+
+
+    section .text {
+        width: 70%;
+        font-size: 30px;
+        padding: 50px;
+        margin: 5% 12%;
+    }
+
+    /* Sobre */
+
+
+    #bcgdpreto {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-right: 105px;
+        margin-bottom: 70px;
+    }
+
+    section #bcgdpreto img {
+        width: 100%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
+    .content {
+        font-size: 20px;
+        text-align: justify;
+        max-width: 700px;
+    }
+
+    #tittletext h1 {
+        margin-right: 150px;
+        padding-bottom: 20px;
+        font-size: 40px;
+    }
+
+    /* Feedback */
+
+    #feedback {
+        margin-bottom: 50px;
+    }
+
+    #feedback-itens {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .fb {
+
+        height: 30%;
+        width: 30%;
+        text-align: center;
+
+    }
+
+
+
+    .fb p {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .fb h3 {
+        text-align: left;
+        font-size: 25px;
+    }
+
+
+
+    .fb .estrela {
+        width: 100%;
+    }
+
+    #feedback h1 {
+        font-size: 40px;
+    }
+
+    /* Footer */
+
+    footer {
+        
+        margin: 100px 120px 70px 120px;
+        
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+
+    footer h1 {
+        padding-top: 20px;
+        padding-left: 80px;
+        font-size: 40px;
+
+    }
+
+    footer h3 {
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+
+    footer #logofooter {
+        width: 10%;
+        margin-top: 80px;
+    }
+
+    footer #address {
+        margin-left: 20px;
+    }
+
+    footer #address img {
+        width: 65%;
+
+    }
+
+
+
+    footer .contact img {
+        width: 50%;
+
+    }
+
 }
