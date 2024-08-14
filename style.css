@@ -1273,7 +1273,7 @@ footer .contact:hover {
     }
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
     /* Menu Principal */
 
     #logoNav {
@@ -1547,8 +1547,6 @@ footer .contact:hover {
         width: 65%;
 
     }
-
-
 
     footer .contact img {
         width: 50%;
