@@ -1130,7 +1130,7 @@ footer .contact:hover {
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
 
     /* Menu Principal */
     #principal div a {
