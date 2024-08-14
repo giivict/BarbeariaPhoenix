@@ -126,7 +126,7 @@ header #bcgddentro {
 
     position: absolute;
     width: 100%;
-    bottom: 10px;
+    bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
