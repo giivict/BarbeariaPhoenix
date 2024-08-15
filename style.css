@@ -123,16 +123,15 @@ header #bcgddentro {
 .dots {
     text-align: center;
     padding: 1%;
-
     position: absolute;
     width: 100%;
-    bottom: 3%;
+    bottom: 18%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
     gap: 1%;
-    margin-bottom: 17vw;
+    
 
 }
 
@@ -163,7 +162,7 @@ header #bcgddentro {
     background-color: var(--cinza);
     margin-top: 150px;
     margin-right: 5%;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
     padding-right: 10px;
     position: relative;
 }
@@ -558,8 +557,6 @@ footer .contact:hover {
 
 }
 
-
-
 @media (max-width: 600px) {
 
     /* Menu Nav */
@@ -589,8 +586,7 @@ footer .contact:hover {
         margin-right: 10px;
         margin-left: 10px;
         padding-right: 10px;
-        margin-bottom: 100px;
-
+        margin-bottom: 50px;
         width: 30%;
     }
 
@@ -636,13 +632,10 @@ footer .contact:hover {
         padding: 0px;
     }
 
-
-
     #agendamento h4 {
         margin: 0;
         padding: 0;
     }
-
 
     header a #arrow {
         margin-left: 10px;
@@ -674,15 +667,14 @@ footer .contact:hover {
 
     #bcgdpreto {
         margin: 0px;
-        margin-left: 50px;
-        margin-right: 50px;
+        
     }
 
     section #bcgdpreto img {
-        margin-left: 20px;
+       
         width: 50%;
-        margin: auto;
-        margin: 10px 70px;
+       
+        margin: 10px 50px 10px 95px;
     }
 
     #sobre h1 {
@@ -718,7 +710,7 @@ footer .contact:hover {
 
     section ul {
         display: block;
-        margin: 0;
+        
     }
 
     section ul li img {
@@ -935,7 +927,7 @@ footer .contact:hover {
         margin-right: 10px;
         margin-left: 10px;
         padding-right: 10px;
-        margin-bottom: 15%;
+        margin-bottom: 10%;
         width: 30%;
     }
 
@@ -1167,7 +1159,7 @@ footer .contact:hover {
         margin-right: 10px;
         margin-left: 10px;
         padding-right: 10px;
-        margin-bottom: 25%;
+        margin-bottom: 15%;
         width: 50%;
     }
 
@@ -1177,7 +1169,7 @@ footer .contact:hover {
     }
 
     .dots {
-        bottom: 8%;
+        bottom: 24%;
     }
 
     /* Serviços */
@@ -1314,7 +1306,7 @@ footer .contact:hover {
         margin-right: 10px;
         margin-left: 10px;
         padding-right: 10px;
-        margin-bottom: 25%;
+        margin-bottom: 15%;
         width: 50%;
     }
 
@@ -1324,7 +1316,7 @@ footer .contact:hover {
     }
 
     .dots {
-        bottom: 8%
+        bottom: 23%
     }
 
     header h1 {
@@ -1583,13 +1575,18 @@ footer .contact:hover {
     header #bcgdcinza {
 
         margin-top: 16%;
-        
+        margin-bottom: 15%;
 
     }
 
 
     .dots {
-        bottom: 3%;
+        bottom: 17%;
+    }
+
+    .dot{
+        width: 15px;
+        height: 15px;
     }
 
     header h1 {
@@ -1617,16 +1614,20 @@ footer .contact:hover {
     }
 
     /* Serviços */
-
-
    
-
     #serv {
         
         max-width: 1920px;
        
     }
 
+    #left-arrow {
+        left: 150px;
+    }
+
+    #right-arrow {
+        right: 150px;
+    }
 
     /* Equipe */
 
@@ -1710,5 +1711,9 @@ footer .contact:hover {
     }
 
 
+
+}
+
+@media (min-width: 2560px) {
 
 }
