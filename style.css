@@ -131,7 +131,7 @@ header #bcgddentro {
     display: flex;
     justify-content: center;
     gap: 1%;
-    
+
 
 }
 
@@ -667,13 +667,13 @@ footer .contact:hover {
 
     #bcgdpreto {
         margin: 0px;
-        
+
     }
 
     section #bcgdpreto img {
-       
+
         width: 50%;
-       
+
         margin: 10px 50px 10px 95px;
     }
 
@@ -710,7 +710,7 @@ footer .contact:hover {
 
     section ul {
         display: block;
-        
+
     }
 
     section ul li img {
@@ -1547,13 +1547,13 @@ footer .contact:hover {
 
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px) and (max-width: 2559px) {
     /* Menu Principal */
 
     #logoNav {
         height: 80%;
         width: 80%;
-        
+
 
     }
 
@@ -1570,7 +1570,7 @@ footer .contact:hover {
 
     /* Pagina Principal */
 
-   
+
 
     header #bcgdcinza {
 
@@ -1584,7 +1584,7 @@ footer .contact:hover {
         bottom: 17%;
     }
 
-    .dot{
+    .dot {
         width: 15px;
         height: 15px;
     }
@@ -1596,12 +1596,12 @@ footer .contact:hover {
 
     figure #logo2 {
         width: 17%;
-       
+
     }
 
 
     header a {
-        
+
         font-size: 30px;
 
     }
@@ -1614,11 +1614,11 @@ footer .contact:hover {
     }
 
     /* Serviços */
-   
+
     #serv {
-        
+
         max-width: 1920px;
-       
+
     }
 
     #left-arrow {
@@ -1692,7 +1692,7 @@ footer .contact:hover {
     }
 
     footer h1 {
-       
+
         font-size: 40px;
 
     }
@@ -1715,5 +1715,235 @@ footer .contact:hover {
 }
 
 @media (min-width: 2560px) {
+    /* Menu Principal */
+
+    #logoNav {
+        height: 120%;
+        width: 120%;
+
+
+    }
+
+    #principal div a {
+        font-size: 30px;
+
+
+    }
+
+    .menu a {
+        padding-left: 230px;
+
+    }
+
+    /* Pagina Principal */
+
+
+
+    header #bcgdcinza {
+
+        margin-top: 16%;
+        margin-bottom: 15%;
+        padding-bottom: 5%;
+        margin-right: 5%;
+
+    }
+
+    .prev,
+    .next {
+        font-size: 275%;
+    }
+
+
+    .dots {
+        bottom: 23%;
+    }
+
+    .dot {
+        width: 20px;
+        height: 20px;
+    }
+
+    header h1 {
+        margin: 20px 50px;
+        font-size: 70px;
+    }
+
+    figure #logo2 {
+        width: 17%;
+
+    }
+
+
+    header a {
+
+        font-size: 40px;
+
+    }
+
+
+    header a #arrow {
+        margin-left: 20px;
+        font-size: 90px;
+
+    }
+
+    /* Serviços */
+
+    section #serv-titulo {
+       font-size: 60px;
+    }
+    
+    #serv {
+        margin-left: 80px;
+        margin-right: 80px;
+        max-width: 2560px;
+        padding-left: 200px;  /* Ajuste o padding para centralizar o conteúdo */
+        padding-right: 200px;
+    }
+
+    .service-list {
+     
+        gap: 60px;
+    } 
+
+    .service-item {
+        width: 530px; /* Aumenta a largura dos itens */
+        padding: 15%;
+        font-size: 25px;
+    }
+
+   
+    #left-arrow {
+        left: 200px; /* Reposiciona a seta para a esquerda */
+    }
+
+    #right-arrow {
+        right: 200px; /* Reposiciona a seta para a direita */
+    }
+
+    .arrow {
+        
+        
+        font-size: 50px;
+        margin-top: 190px;
+        
+    }
+
+    .service-item button {
+    
+        padding: 12px;
+       
+        font-size: 25px;
+        
+      
+    }
+
+
+    /* Equipe */
+
+    #equipe-tittle {
+        margin-top: 200px;
+        font-size: 60px;
+    }
+
+    section ul li {
+        margin: 0 180px;
+        margin-bottom: 100px;
+    }
+
+    section ul li img {
+        width: 200%;
+    }
+
+    ul li h3 {
+    
+        margin-left: 60%;
+        font-size: 40px;
+    }
+    
+    section .text {
+        width: 80%;
+        font-size: 40px;
+        padding: 50px;
+        margin: 0 10% 5% 9%;
+    }
+
+    /* Sobre */
+
+
+    #bcgdpreto {
+      
+    }
+
+    section #bcgdpreto img {
+        width: 110%;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
+    .content {
+        font-size: 35px;
+        max-width: 800px;
+        margin-left: 200px;
+    }
+
+    #tittletext h1 {
+        margin-left: 200px;
+        margin-top: 150px;
+        font-size: 60px;
+    }
+
+       /* Feedback */
+  
+    .fb p {
+        font-size: 30px;
+        
+    }
+
+    .fb h3 {
+        text-align: left;
+        font-size: 35px;
+    }
+
+    .fb .estrela {
+        width: 100%;
+    }
+
+    #feedback h1 {
+        font-size: 60px;
+    }
+
+    /* Footer */
+
+    footer p {
+        font-size: 35px;
+    }
+
+    footer h1 {
+
+        font-size: 60px;
+
+    }
+
+    footer h3 {
+        font-size: 40px;
+    }
+
+    footer #address {
+        margin-left: -210px;
+        margin-right: 200px;
+        margin-bottom: 100px;
+    }
+
+    footer #address img {
+        width: 130%;
+
+    }
+
+    footer .contact img {
+        width: 60%;
+        margin-top: 40px;
+
+    }
 
 }
