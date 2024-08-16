@@ -1,3 +1,25 @@
+// Menu navegação
+
+document.getElementById("menuIcon").onclick = function() {
+    var menuOverlay = document.getElementById("menuOverlay");
+    if (window.innerWidth <= 600) { // Verifica se a largura da tela é menor ou igual a 600px
+        if (menuOverlay.style.right === "0px") {
+            menuOverlay.style.right = "-250px";
+        } else {
+            menuOverlay.style.right = "0px";
+        }
+    }
+};
+
+// Adiciona um evento para garantir que o menu feche quando a tela for redimensionada para um tamanho maior
+window.onresize = function() {
+    if (window.innerWidth > 600) {
+        document.getElementById("menuOverlay").style.right = "-250px";
+        document.querySelector(".menu").style.display = "flex"; // Mostrar o menu de navegação original
+    }
+};
+
+
 // Página Principal
 
 let currentIndex = 0;

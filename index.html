@@ -23,12 +23,26 @@
                 <figure>
                     <img id="logoNav" src="/Imagens/logo.png" alt="logo">
                 </figure>
+                <div id="menuIcon" class="menu-icon">
+                    &#9776; <!-- Ícone de hambúrguer -->
+                </div>
                 <div class="menu">
+                    <!-- Menu de navegação original visível em telas maiores -->
                     <a href="#principal">PÁGINA PRINCIPAL</a>
                     <a href="#serv">SERVIÇOS</a>
                     <a href="#equipe">EQUIPE</a>
                     <a href="#sobre">SOBRE</a>
                     <a href="#final">CONTATO</a>
+                </div>
+                <div id="menuOverlay" class="menu-overlay">
+                    <div class="menu-content">
+                        <!-- Menu de navegação sobreposto visível em telas menores -->
+                        <a href="#principal">PÁGINA PRINCIPAL</a>
+                        <a href="#serv">SERVIÇOS</a>
+                        <a href="#equipe">EQUIPE</a>
+                        <a href="#sobre">SOBRE</a>
+                        <a href="#final">CONTATO</a>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -38,11 +52,11 @@
             <div id="bcgdPaginaPrincipal">
                 <div id="bcgddentro">
                     <figure id="img">
-                        
+
                         <div class="carousel-container">
                             <img class="imgmeio" src="/Imagens/paginaprincipal.png" alt="">
                             <img class="imgmeio" src="/Imagens/corte1.png" alt="logo">
-                            <img class="imgmeio" src="/Imagens/corte2.png" alt="">                           
+                            <img class="imgmeio" src="/Imagens/corte2.png" alt="">
                             <img class="imgmeio" src="/Imagens/corte3.png" alt="logo">
                             <img class="imgmeio" src="/Imagens/corte4.png" alt="logo">
                             <img class="imgmeio" src="/Imagens/corte5.png" alt="logo">
@@ -81,141 +95,143 @@
                         </div>
                     </div>
                 </div>
-                
+
         </header>
 
 
 
-         <!-- Serviço -->
-         <section>
+        <!-- Serviço -->
+        <section>
             <div id="serv">
-            <h1 id="serv-titulo">Serviços</h1>
-            <button class="arrow" onclick="prevPage()" id="left-arrow">&#10094;</button>
+                <h1 id="serv-titulo">Serviços</h1>
+                <button class="arrow" onclick="prevPage()" id="left-arrow">&#10094;</button>
 
-            <div id="services">
-                <div class="services-wrapper">
-                    <div class="service-list">
-                        <div class="service-item" id="serv1">
-                            <p>Corte Atual (Degrade)</p>
-                            <p>50 min</p>
-                            <p>R$ 40</p>
-                            <button onclick="enviarMensagem('Corte Atual')">Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv2">
-                            <p>Corte e Sobrancelha</p>
-                            <p>1 h</p>
-                            <p>R$ 45</p>
-                            <button onclick="enviarMensagem('Corte e Sobrancelha')">Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv2">
-                            <p> Corte e Barba</p>
-                            <p> 1 h 20 min </p>
-                            <p> R$ 60 </p>
-                            <button onclick="enviarMensagem('Corte e Barba')">Agendar um horário</button>
+                <div id="services">
+                    <div class="services-wrapper">
+                        <div class="service-list">
+                            <div class="service-item" id="serv1">
+                                <p>Corte Atual (Degrade)</p>
+                                <p>50 min</p>
+                                <p>R$ 40</p>
+                                <button onclick="enviarMensagem('Corte Atual')">Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv2">
+                                <p>Corte e Sobrancelha</p>
+                                <p>1 h</p>
+                                <p>R$ 45</p>
+                                <button onclick="enviarMensagem('Corte e Sobrancelha')">Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv2">
+                                <p> Corte e Barba</p>
+                                <p> 1 h 20 min </p>
+                                <p> R$ 60 </p>
+                                <button onclick="enviarMensagem('Corte e Barba')">Agendar um horário</button>
+                            </div>
+
+                            <div class="service-item" id="serv4">
+                                <p>Corte e Depilação Nasal</p>
+                                <p>55 min</p>
+                                <p>R$ 55</p>
+                                <button onclick="enviarMensagem('Corte e Depilação Nasal')">Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv5">
+                                <p>Corte e Hidratação</p>
+                                <p>1 h</p>
+                                <p>R$ 55</p>
+                                <button onclick="enviarMensagem('Corte e Hidratação')">Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv6">
+                                <p>Corte, Barba e Sobrancelha</p>
+                                <p>1 h 10 min</p>
+                                <p>R$ 65</p>
+                                <button onclick="enviarMensagem('Corte, Barba e Sobrancelha')">Agendar um
+                                    horário</button>
+                            </div>
                         </div>
 
-                        <div class="service-item" id="serv4">
-                            <p>Corte e Depilação Nasal</p>
-                            <p>55 min</p>
-                            <p>R$ 55</p>
-                            <button onclick="enviarMensagem('Corte e Depilação Nasal')">Agendar um horário</button>
+                        <div class="service-list">
+                            <div class="service-item" id="serv7">
+                                <p>Luzes</p>
+                                <p>2 h</p>
+                                <p>R$ 80</p>
+                                <button onclick="enviarMensagem('Luzes')">Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv8">
+                                <p>Platinado</p>
+                                <p>3 h 30 min</p>
+                                <p>R$ 120</p>
+                                <button onclick="enviarMensagem('Platinado')">Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv9">
+                                <p>Corte e Progressiva</p>
+                                <p>2 h 20 min</p>
+                                <p>R$ 99</p>
+                                <button onclick="enviarMensagem('Corte e Progressiva')">Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv10">
+                                <p>Barba</p>
+                                <p>30 min</p>
+                                <p>R$ 30</p>
+                                <button onclick="enviarMensagem('Barba')">Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv11">
+                                <p>Corte e Alisamento</p>
+                                <p>1 h 10 min</p>
+                                <p>R$ 70</p>
+                                <button onclick="enviarMensagem('Corte e Alisamento')">Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv12">
+                                <p>Progressiva</p>
+                                <p>1 h 30 min</p>
+                                <p>R$ 80</p>
+                                <button onclick="enviarMensagem('Progressiva')">Agendar um horário</button>
+                            </div>
                         </div>
-                        <div class="service-item" id="serv5">
-                            <p>Corte e Hidratação</p>
-                            <p>1 h</p>
-                            <p>R$ 55</p>
-                            <button onclick="enviarMensagem('Corte e Hidratação')">Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv6">
-                            <p>Corte, Barba e Sobrancelha</p>
-                            <p>1 h 10 min</p>
-                            <p>R$ 65</p>
-                            <button onclick="enviarMensagem('Corte, Barba e Sobrancelha')">Agendar um horário</button>
-                        </div>
-                    </div>
 
-                    <div class="service-list">
-                        <div class="service-item" id="serv7">
-                            <p>Luzes</p>
-                            <p>2 h</p>
-                            <p>R$ 80</p>
-                            <button onclick="enviarMensagem('Luzes')">Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv8">
-                            <p>Platinado</p>
-                            <p>3 h 30 min</p>
-                            <p>R$ 120</p>
-                            <button onclick="enviarMensagem('Platinado')">Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv9">
-                            <p>Corte e Progressiva</p>
-                            <p>2 h 20 min</p>
-                            <p>R$ 99</p>
-                            <button onclick="enviarMensagem('Corte e Progressiva')">Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv10">
-                            <p>Barba</p>
-                            <p>30 min</p>
-                            <p>R$ 30</p>
-                            <button onclick="enviarMensagem('Barba')">Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv11">
-                            <p>Corte e Alisamento</p>
-                            <p>1 h 10 min</p>
-                            <p>R$ 70</p>
-                            <button onclick="enviarMensagem('Corte e Alisamento')">Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv12">
-                            <p>Progressiva</p>
-                            <p>1 h 30 min</p>
-                            <p>R$ 80</p>
-                            <button onclick="enviarMensagem('Progressiva')">Agendar um horário</button>
-                        </div>
-                    </div>
-
-                    <div class="service-list">
-                        <div class="service-item" id="serv13">
-                            <p>Botox</p>
-                            <p>1 h</p>
-                            <p>R$ 50</p>
-                            <button onclick="enviarMensagem('Botox')">Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv14">
-                            <p>Alisamento</p>
-                            <p>20 min</p>
-                            <p>R$ 4</p>
-                            <button onclick="enviarMensagem('Alisamento')">Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv15">
-                            <p>Corte e Luzes</p>
-                            <p>2 h 50 min</p>
-                            <p>R$ 110</p>
-                            <button onclick="enviarMensagem('Corte e Luzes')">Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv16">
-                            <p>Sobrancelha</p>
-                            <p>10 min</p>
-                            <p>R$ 5</p>
-                            <button onclick="enviarMensagem('Sobrancelha')">Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv17">
-                            <p>Limpeza de Pele</p>
-                            <p>15 min</p>
-                            <p>R$ 18</p>
-                            <button onclick="enviarMensagem('Limpeza de Pele')">Agendar um horário</button>
-                        </div>
-                        <div class="service-item" id="serv18">
-                            <p>Hidratação</p>
-                            <p>5 min</p>
-                            <p>R$ 20</p>
-                            <button onclick="enviarMensagem('Hidratação')">Agendar um horário</button>
+                        <div class="service-list">
+                            <div class="service-item" id="serv13">
+                                <p>Botox</p>
+                                <p>1 h</p>
+                                <p>R$ 50</p>
+                                <button onclick="enviarMensagem('Botox')">Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv14">
+                                <p>Alisamento</p>
+                                <p>20 min</p>
+                                <p>R$ 4</p>
+                                <button onclick="enviarMensagem('Alisamento')">Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv15">
+                                <p>Corte e Luzes</p>
+                                <p>2 h 50 min</p>
+                                <p>R$ 110</p>
+                                <button onclick="enviarMensagem('Corte e Luzes')">Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv16">
+                                <p>Sobrancelha</p>
+                                <p>10 min</p>
+                                <p>R$ 5</p>
+                                <button onclick="enviarMensagem('Sobrancelha')">Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv17">
+                                <p>Limpeza de Pele</p>
+                                <p>15 min</p>
+                                <p>R$ 18</p>
+                                <button onclick="enviarMensagem('Limpeza de Pele')">Agendar um horário</button>
+                            </div>
+                            <div class="service-item" id="serv18">
+                                <p>Hidratação</p>
+                                <p>5 min</p>
+                                <p>R$ 20</p>
+                                <button onclick="enviarMensagem('Hidratação')">Agendar um horário</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <button class="arrow" onclick="nextPage()" id="right-arrow">&#10095;</button>
             </div>
-            <button class="arrow" onclick="nextPage()" id="right-arrow">&#10095;</button>
-        </div>
         </section>
+
 
 
         <!-- Equipe -->
@@ -314,34 +330,34 @@
                 </section>
             </div>
 
-             <!-- Sobre -->
-        <section id="sobre">
-            <figure id="bcgdpreto">
-                <img src="/Imagens/sobre.png" alt="">
-            </figure>
-            <div id="tittletext">
-                <h1>NOSSA <br> HISTORIA</h1>
-                <p class="content">
-                    A Phoenix Barbearia, liderada por Pedro, está rapidamente se destacando no mercado,
-                    trazendo consigo uma abordagem inovadora no cuidado da autoestima. Para nós, a
-                    imagem que projetamos está intrinsecamente ligada à forma como nos sentimos, e é
-                    por isso que ele se esforça para criar um ambiente acolhedor e moderno na Phoenix.
-                    Aqui, os clientes não apenas recebem cortes impecáveis e tratamentos de barba, mas
-                    também encontram um espaço onde se sentem à vontade para se expressar, tirar fotos
-                    e elevar sua autoestima.
-                </p>
-                <p class="content">
-                    Ao adotar a imagem da Phoenix como símbolo, Pedro deseja transmitir não apenas uma
-                    identidade única, mas também um significado mais profundo. A Phoenix, com suas chamas
-                    vibrantes, representa não apenas renascimento, mas também resiliência e transformação.
-                    Na Phoenix Barbearia, cada cliente é incentivado a se reconectar com sua própria força
-                    interior e sair renovado, pronto para enfrentar os desafios do dia a dia com confiança
-                    e estilo.
-                </p>
-            </div>
-        </section>
+            <!-- Sobre -->
+            <section id="sobre">
+                <figure id="bcgdpreto">
+                    <img src="/Imagens/sobre.png" alt="">
+                </figure>
+                <div id="tittletext">
+                    <h1>NOSSA <br> HISTORIA</h1>
+                    <p class="content">
+                        A Phoenix Barbearia, liderada por Pedro, está rapidamente se destacando no mercado,
+                        trazendo consigo uma abordagem inovadora no cuidado da autoestima. Para nós, a
+                        imagem que projetamos está intrinsecamente ligada à forma como nos sentimos, e é
+                        por isso que ele se esforça para criar um ambiente acolhedor e moderno na Phoenix.
+                        Aqui, os clientes não apenas recebem cortes impecáveis e tratamentos de barba, mas
+                        também encontram um espaço onde se sentem à vontade para se expressar, tirar fotos
+                        e elevar sua autoestima.
+                    </p>
+                    <p class="content">
+                        Ao adotar a imagem da Phoenix como símbolo, Pedro deseja transmitir não apenas uma
+                        identidade única, mas também um significado mais profundo. A Phoenix, com suas chamas
+                        vibrantes, representa não apenas renascimento, mas também resiliência e transformação.
+                        Na Phoenix Barbearia, cada cliente é incentivado a se reconectar com sua própria força
+                        interior e sair renovado, pronto para enfrentar os desafios do dia a dia com confiança
+                        e estilo.
+                    </p>
+                </div>
+            </section>
 
-          
+
 
             <!-- Feedback -->
             <section id="feedback">

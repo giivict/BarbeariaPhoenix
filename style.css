@@ -36,6 +36,7 @@ h3 {
     display: flex;
     align-items: center;
     padding-bottom: 0px;
+    position: relative;
 }
 
 #logoNav {
@@ -47,18 +48,61 @@ h3 {
 #principal div a {
     font-size: 13px;
     text-decoration: none;
-    color: var(--preto);
+    color: var(--preto); /* Cor original das letras */
     font-family: Montserrat;
     font-weight: 400;
+}
 
+.menu a{
+    padding-left: 110px;
 }
 
 #principal div a:hover {
-    color: white;
+    color: white; /* Cor ao passar o mouse */
 }
 
-.menu a {
-    padding-left: 110px;
+.menu-icon {
+    display: none; /* Esconder o ícone por padrão */
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Para garantir que o ícone fique acima de outros elementos */
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Esconder o menu fora da tela */
+    height: 100%;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    overflow: auto;
+    transition: right 0.3s ease;
+    z-index: 999; /* Para garantir que o menu fique abaixo do ícone */
+    display: none; /* Esconder o menu por padrão */
+}
+
+.menu-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-content a {
+    color: white; /* Cor das letras em branco */
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.menu-content a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Página Principal */
@@ -561,18 +605,16 @@ footer .contact:hover {
 
     /* Menu Nav */
 
-    #logoNav {
-        height: 15px;
-        width: 80px;
-        margin-top: 20px;
+    .menu a{
+        display: none; /* Esconder o menu de navegação original em telas pequenas */
+    }
+    
+    .menu-icon {
+        display: block; /* Mostrar o ícone em telas pequenas */
     }
 
-    #principal div a {
-        font-size: 6px;
-    }
-
-    .menu a {
-        padding-left: 17px;
+    .menu-overlay {
+        display: block; /* Mostrar o menu sobreposto em telas pequenas */
     }
 
     /* Menu Principal */
@@ -581,55 +623,70 @@ footer .contact:hover {
         padding: 0px 10px 0px 10px;
     }
 
-    header #bcgdcinza {
-        margin-top: 8%;
-        margin-right: 10px;
-        margin-left: 10px;
-        padding-right: 10px;
-        margin-bottom: 50px;
-        width: 30%;
+    header #bcgddentro{
+        display: flex;
+        flex-direction: column;
     }
 
-
-
-    #bcgddentro {
-        margin-bottom: 0%;
-        padding-bottom: 0%;
+    header #bcgdcinza {
+        margin-top: -85%;
+        margin-right: 10px;
+        margin-left: 0px;
+        padding-right: 10px;
+        margin-bottom: 50px;
+        padding-bottom: 30px;
+        width: 93%;
+        position: absolute;
     }
 
     header h1 {
-        margin: 15px 20px 0;
-        font-size: 10px;
+        margin: 30px 20px 0;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: left;
+        
 
+    }
+
+    #titulopaginaprincipal br{
+        display: inline;
+        content: " ";
     }
 
     #img {
-        width: 60%;
+        
+        width: 100%;
+        margin-top: 15%;
+        margin-bottom: 20%;
     }
-
 
 
     figure #logo2 {
-        width: 20%;
-        margin-top: 10px;
-        margin-left: 70px;
+        display: none;
     }
 
     header #agendar {
-        margin-left: 20px;
+        margin-left: 26%;
+
     }
 
     header a {
         color: var(--preto);
         padding-right: 10px;
-        font-size: 6px;
+        font-size: 10px;
         margin: 0px;
         font-weight: bold;
+        text-transform: uppercase;
     }
 
     #agendar {
-        margin-top: 20px;
-        padding: 0px;
+        margin-top: 80%;
+        position: absolute;
+        background-color: var(--cinza);
+        border-radius: 10px;
+        padding: 5%;
+
     }
 
     #agendamento h4 {
@@ -649,10 +706,10 @@ footer .contact:hover {
 
     .prev,
     .next {
-        top: 35%;
+        top: 50%;
         padding: 1%;
 
-        font-size: 70%;
+        font-size: 100%;
         transition: 0.6s ease;
         user-select: none;
     }
@@ -750,22 +807,23 @@ footer .contact:hover {
     }
 
     section #serv-titulo {
-        font-size: 10px;
+        font-size: 17px;
         margin-top: 10px;
         padding-top: 30px;
     }
 
     .service-list {
-
-        gap: 10px;
+        grid-template-rows: repeat(18, 1fr);
+        gap: 20px;
     }
 
     .service-item {
         border-radius: 8px;
         padding: 3px;
         margin: 3px;
-        font-size: 6px;
-        width: 100px;
+        font-size: 10px;
+        width: 160px;
+        height: 130px;
     }
 
     .arrow {
@@ -1941,7 +1999,7 @@ footer .contact:hover {
     }
 
     footer .contact img {
-        width: 60%;
+        width: 0%;
         margin-top: 40px;
 
     }
