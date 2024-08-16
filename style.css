@@ -620,6 +620,12 @@ footer .contact:hover {
     .menu-overlay {
         display: block; /* Mostrar o menu sobreposto em telas pequenas */
     }
+    
+    nav #logoNav{
+        width: 80%;
+        height: 20%;
+    }
+    
 
     /* Menu Principal */
 
@@ -633,7 +639,7 @@ footer .contact:hover {
     }
 
     header #bcgdcinza {
-        margin-top: -85%;
+        margin-top: -150%;
         margin-right: 10px;
         margin-left: 0px;
         padding-right: 10px;
@@ -645,22 +651,22 @@ footer .contact:hover {
 
     header h1 {
         margin: 30px 20px 0;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: bold;
         text-transform: uppercase;
-        text-align: left;
+        text-align: center;
         
 
     }
 
-    #titulopaginaprincipal br {
+    #titulopaginaprincipal {
         display: none; /* Esconde o <br> em telas com largura máxima de 600px */
     }
 
     #img {
         
         width: 100%;
-        margin-top: 15%;
+        margin-top: 0%;
         margin-bottom: 20%;
     }
 
@@ -684,7 +690,7 @@ footer .contact:hover {
     }
 
     #agendar {
-        margin-top: 80%;
+        margin-top: 110%;
         position: absolute;
         background-color: var(--cinza);
         border-radius: 10px;
