@@ -118,6 +118,10 @@ header #bcgddentro {
     padding: 0px 80px;
 }
 
+#titulopaginaprincipal br {
+    display: inline; /* Exibe o <br> normalmente em telas grandes */
+}
+
 
 #img {
     position: relative;
@@ -649,9 +653,8 @@ footer .contact:hover {
 
     }
 
-    #titulopaginaprincipal br{
-        display: inline;
-        content: " ";
+    #titulopaginaprincipal br {
+        display: none; /* Esconde o <br> em telas com largura máxima de 600px */
     }
 
     #img {
