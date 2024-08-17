@@ -45,7 +45,7 @@ h3 {
     margin: 10px;
 }
 
-#principal div a {
+#principal .menu a {
     font-size: 13px;
     text-decoration: none;
     color: var(--preto); /* Cor original das letras */
@@ -55,10 +55,11 @@ h3 {
 
 .menu a{
     padding-left: 110px;
+    
 }
 
 #principal div a:hover {
-    color: white; /* Cor ao passar o mouse */
+    color: white; 
 }
 
 .menu-icon {
@@ -93,12 +94,14 @@ h3 {
     align-items: center;
 }
 
-.menu-content a {
-    color: white; /* Cor das letras em branco */
-    font-size: 18px;
+ .menu-content a {
+  color: var(--cinza);
+    font-size: 15px;
     text-decoration: none;
     padding: 15px;
     display: block;
+    font-weight: 300;
+    margin-top: 20px;
 }
 
 .menu-content a:hover {
