@@ -110,7 +110,7 @@ h3 {
     padding: 15px;
     display: block;
     font-weight: 300;
-    margin-top: 20gitpx;
+    margin-top: 30px;
 }
 
 .menu-content a:hover {
@@ -1950,9 +1950,6 @@ footer .contact:hover {
     /* Sobre */
 
 
-    #bcgdpreto {
-      
-    }
 
     section #bcgdpreto img {
         width: 110%;
