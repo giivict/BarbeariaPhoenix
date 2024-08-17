@@ -74,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 let currentPage = 0;
 const itemsPerPage = 6;
+const serviceList = document.querySelector('.service-list');
 const services = document.querySelectorAll('.service-item');
 const totalPages = Math.ceil(services.length / itemsPerPage);
 
@@ -89,6 +90,7 @@ function updateServices() {
     });
     document.getElementById('left-arrow').style.display = currentPage === 0 ? 'none' : 'block';
     document.getElementById('right-arrow').style.display = currentPage === totalPages - 1 ? 'none' : 'block';
+
 }
 
 function nextPage() {
@@ -113,37 +115,6 @@ function enviarMensagem(servico) {
     const link = `https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagem)}`;
     window.open(link, '_blank');
 }
-
-
-const servicesWrapper = document.getElementById('services');
-let startX;
-let threshold = 100; 
-let isDragging = false;
-
-servicesWrapper.addEventListener('touchstart', function(e) {
-    startX = e.touches[0].clientX;
-    isDragging = true;
-});
-
-servicesWrapper.addEventListener('touchend', function(e) {
-    if (!isDragging) return;
-
-    const endX = e.changedTouches[0].clientX;
-    const diffX = startX - endX;
-
-    if (Math.abs(diffX) > threshold) {
-        if (diffX > 0) {
-           
-            nextPage();
-        } else {
-            
-        }
-    }
-
-    isDragging = false;
-});
-
-
 
 
 
