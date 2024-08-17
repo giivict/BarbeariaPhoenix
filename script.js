@@ -72,9 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Serviços
 
+// Código JavaScript existente
+
 let currentPage = 0;
 const itemsPerPage = 6;
-const serviceList = document.querySelector('.service-list');
 const services = document.querySelectorAll('.service-item');
 const totalPages = Math.ceil(services.length / itemsPerPage);
 
@@ -90,7 +91,6 @@ function updateServices() {
     });
     document.getElementById('left-arrow').style.display = currentPage === 0 ? 'none' : 'block';
     document.getElementById('right-arrow').style.display = currentPage === totalPages - 1 ? 'none' : 'block';
-
 }
 
 function nextPage() {
@@ -115,6 +115,27 @@ function enviarMensagem(servico) {
     const link = `https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagem)}`;
     window.open(link, '_blank');
 }
+
+// Novo código JavaScript para adicionar funcionalidade de deslizar
+
+const servicesWrapper = document.getElementById('services');
+let startX;
+
+servicesWrapper.addEventListener('touchstart', function(e) {
+    startX = e.touches[0].clientX;
+});
+
+servicesWrapper.addEventListener('touchmove', function(e) {
+    const moveX = e.touches[0].clientX;
+    const diffX = startX - moveX;
+
+    if (diffX > 50) {
+        nextPage();
+    } else if (diffX < -50) {
+        prevPage();
+    }
+});
+
 
 
 
