@@ -21,7 +21,7 @@ h3 {
 /* Variável global */
 :root {
     --preto: #1C1C1C;
-    --cinza: #CCCBCB;
+    --cinza: #cccbcb;
     --verde: #2A463A;
     --fonte-texto: Montserrat;
 }
@@ -688,24 +688,26 @@ footer .contact:hover {
     }
 
     header #agendar {
-        margin-left: 26%;
+        margin-left: 10%;
+        background-color: rgba(204, 203, 203, 0);
 
     }
 
     header a {
-        color: var(--preto);
+        color: var(--cinza);
         padding-right: 10px;
-        font-size: 10px;
+        font-size: 18px;
         margin: 0px;
         font-weight: bold;
         text-transform: uppercase;
+        
     }
 
     #agendar {
-        margin-top: 110%;
+        margin-top: 125%;
         position: absolute;
         background-color: var(--cinza);
-        border-radius: 10px;
+      
         padding: 5%;
 
     }
@@ -716,9 +718,10 @@ footer .contact:hover {
     }
 
     header a #arrow {
-        margin-left: 10px;
-        font-size: 20px;
-
+        margin-left: 13px;
+        font-size: 50px;
+        text-align: center;
+        padding-bottom: 8px;
     }
 
     .dots {
