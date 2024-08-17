@@ -2,7 +2,7 @@
 
 document.getElementById("menuIcon").onclick = function() {
     var menuOverlay = document.getElementById("menuOverlay");
-    if (window.innerWidth <= 600) { // Verifica se a largura da tela é menor ou igual a 600px
+    if (window.innerWidth <= 600) {
         if (menuOverlay.style.right === "0px") {
             menuOverlay.style.right = "-250px";
         } else {
@@ -11,11 +11,11 @@ document.getElementById("menuIcon").onclick = function() {
     }
 };
 
-// Adiciona um evento para garantir que o menu feche quando a tela for redimensionada para um tamanho maior
+
 window.onresize = function() {
     if (window.innerWidth > 600) {
         document.getElementById("menuOverlay").style.right = "-250px";
-        document.querySelector(".menu").style.display = "flex"; // Mostrar o menu de navegação original
+        document.querySelector(".menu").style.display = "flex"; 
     }
 };
 
@@ -52,14 +52,11 @@ function currentSlide(index) {
     showImage(index);
 }
 
-// Chama a função para iniciar o carrossel
-setInterval(showNextImage, 3000); // Muda a cada 3 segundos
+setInterval(showNextImage, 3000); 
 
-// Inicializa a primeira imagem como visível quando a página carrega
 document.addEventListener('DOMContentLoaded', () => {
     showImage(0);
 
-    // Configura o Hammer.js para detectar gestos de swipe
     const carousel = document.querySelector('.carousel-container');
     const hammer = new Hammer(carousel);
 

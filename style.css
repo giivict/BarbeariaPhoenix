@@ -48,7 +48,7 @@ h3 {
 #principal .menu a {
     font-size: 13px;
     text-decoration: none;
-    color: var(--preto); /* Cor original das letras */
+    color: var(--preto); 
     font-family: Montserrat;
     font-weight: 400;
 }
@@ -63,37 +63,37 @@ h3 {
 }
 
 .menu-icon {
-    display: none; /* Esconder o ícone por padrão */
-    font-size: 20px; /* Tamanho do ícone de sanduíche */
+    display: none; 
+    font-size: 20px; 
     cursor: pointer;
     margin-left: auto;
     margin-right: 20px;
     position: fixed;
     top: 20px;
     right: 10px;
-    z-index: 1000; /* Para garantir que o ícone fique acima de outros elementos */
-    background-color: #ccc; /* Fundo cinza para o ícone */
-    border-radius: 50%; /* Faz o fundo do ícone ser redondo */
-    padding: 2px; /* Espaçamento interno ajustado para manter o ícone pequeno */
-    width: 30px; /* Largura do ícone */
-    height: 30px; /* Altura do ícone */
-    text-align: center; /* Alinha o texto (ícone) no centro */
-    line-height: 30px; /* Ajusta a altura da linha para centralizar o ícone verticalmente */
-    font-weight: bold; /* Garante que o ícone seja visível */
+    z-index: 1000; 
+    background-color: #ccc; 
+    border-radius: 50%; 
+    padding: 2px; 
+    width: 30px; 
+    height: 30px; 
+    text-align: center; 
+    line-height: 30px; 
+    font-weight: bold; 
 }
 
 
 .menu-overlay {
     position: fixed;
     top: 0;
-    right: -250px; /* Esconder o menu fora da tela */
+    right: -250px; 
     height: 100%;
     width: 250px;
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.8); 
     overflow: auto;
     transition: right 0.3s ease;
-    z-index: 999; /* Para garantir que o menu fique abaixo do ícone */
-    display: none; /* Esconder o menu por padrão */
+    z-index: 999; 
+    display: none; 
 }
 
 .menu-content {
@@ -131,7 +131,7 @@ header #bcgddentro {
 }
 
 #titulopaginaprincipal br {
-    display: inline; /* Exibe o <br> normalmente em telas grandes */
+    display: inline; 
 }
 
 
@@ -622,15 +622,15 @@ footer .contact:hover {
     /* Menu Nav */
 
     .menu a{
-        display: none; /* Esconder o menu de navegação original em telas pequenas */
+        display: none; 
     }
     
     .menu-icon {
-        display: block; /* Mostrar o ícone em telas pequenas */
+        display: block; 
     }
 
     .menu-overlay {
-        display: block; /* Mostrar o menu sobreposto em telas pequenas */
+        display: block;
     }
     
     nav #logoNav{
@@ -672,7 +672,7 @@ footer .contact:hover {
     }
 
     #titulopaginaprincipal {
-        display: none; /* Esconde o <br> em telas com largura máxima de 600px */
+        display: none; 
     }
 
     #img {
