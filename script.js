@@ -74,6 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Código JavaScript existente
 
+// Código JavaScript existente
+
 let currentPage = 0;
 const itemsPerPage = 6;
 const services = document.querySelectorAll('.service-item');
@@ -116,10 +118,11 @@ function enviarMensagem(servico) {
     window.open(link, '_blank');
 }
 
-// Novo código JavaScript para adicionar funcionalidade de deslizar
+// Novo código JavaScript para ajustar o deslize
 
 const servicesWrapper = document.getElementById('services');
 let startX;
+let threshold = 100; // Aumentei a sensibilidade
 
 servicesWrapper.addEventListener('touchstart', function(e) {
     startX = e.touches[0].clientX;
@@ -129,9 +132,11 @@ servicesWrapper.addEventListener('touchmove', function(e) {
     const moveX = e.touches[0].clientX;
     const diffX = startX - moveX;
 
-    if (diffX > 50) {
+    if (diffX > threshold) {
+        // Deslizar para a esquerda, próxima página
         nextPage();
-    } else if (diffX < -50) {
+    } else if (diffX < -threshold) {
+        // Deslizar para a direita, página anterior
         prevPage();
     }
 });
