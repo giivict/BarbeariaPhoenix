@@ -303,6 +303,7 @@ section #serv-titulo {
 .services-wrapper {
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease;
 }
 
 .service-list {
@@ -412,7 +413,7 @@ ul li h3 {
 }
 
 ul li img {
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
     cursor: pointer;
 }
 

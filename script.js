@@ -52,11 +52,13 @@ function currentSlide(index) {
     showImage(index);
 }
 
-setInterval(showNextImage, 3000); 
+setInterval(showNextImage, 3000); // Muda a cada 3 segundos
 
+// Inicializa a primeira imagem como visível quando a página carrega
 document.addEventListener('DOMContentLoaded', () => {
     showImage(0);
 
+    // Configura o Hammer.js para detectar gestos de swipe
     const carousel = document.querySelector('.carousel-container');
     const hammer = new Hammer(carousel);
 
@@ -72,21 +74,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Serviços
 
-// Código JavaScript existente
-
 let currentPage = 0;
 const itemsPerPage = 6;
-const servicesWrapper = document.getElementById('services');
-const serviceLists = document.querySelectorAll('.service-list');
-const totalPages = Math.ceil(serviceLists.length / itemsPerPage);
-const threshold = 100; // Ajuste conforme necessário
-let startX, isDragging = false;
+const serviceList = document.querySelector('.service-list');
+const services = document.querySelectorAll('.service-item');
+const totalPages = Math.ceil(services.length / itemsPerPage);
 
 function updateServices() {
-    const offset = -currentPage * 100; // Move para a página correta
-    servicesWrapper.style.transform = `translateX(${offset}%)`;
+    const start = currentPage * itemsPerPage;
+    const end = start + itemsPerPage;
+    services.forEach((service, index) => {
+        if (index >= start && index < end) {
+            service.style.display = 'block';
+        } else {
+            service.style.display = 'none';
+        }
+    });
     document.getElementById('left-arrow').style.display = currentPage === 0 ? 'none' : 'block';
     document.getElementById('right-arrow').style.display = currentPage === totalPages - 1 ? 'none' : 'block';
+
 }
 
 function nextPage() {
@@ -103,31 +109,14 @@ function prevPage() {
     }
 }
 
-function handleSwipe(e) {
-    if (!isDragging) return;
-
-    const endX = e.changedTouches[0].clientX;
-    const diffX = startX - endX;
-
-    if (Math.abs(diffX) > threshold) {
-        if (diffX > 0) {
-            nextPage(); // Deslizar para a esquerda
-        } else {
-            prevPage(); // Deslizar para a direita
-        }
-    }
-    isDragging = false;
-}
-
-servicesWrapper.addEventListener('touchstart', function(e) {
-    startX = e.touches[0].clientX;
-    isDragging = true;
-});
-
-servicesWrapper.addEventListener('touchend', handleSwipe);
-
 updateServices();
 
+function enviarMensagem(servico) {
+    const numeroTelefone = '5511964538195';
+    const mensagem = `Olá, gostaria de marcar um horário para realizar ${servico}`;
+    const link = `https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagem)}`;
+    window.open(link, '_blank');
+}
 
 
 
