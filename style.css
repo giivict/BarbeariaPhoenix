@@ -64,15 +64,24 @@ h3 {
 
 .menu-icon {
     display: none; /* Esconder o ícone por padrão */
-    font-size: 30px;
+    font-size: 20px; /* Tamanho do ícone de sanduíche */
     cursor: pointer;
     margin-left: auto;
     margin-right: 20px;
     position: fixed;
     top: 20px;
-    right: 20px;
+    right: 10px;
     z-index: 1000; /* Para garantir que o ícone fique acima de outros elementos */
+    background-color: #ccc; /* Fundo cinza para o ícone */
+    border-radius: 50%; /* Faz o fundo do ícone ser redondo */
+    padding: 2px; /* Espaçamento interno ajustado para manter o ícone pequeno */
+    width: 30px; /* Largura do ícone */
+    height: 30px; /* Altura do ícone */
+    text-align: center; /* Alinha o texto (ícone) no centro */
+    line-height: 30px; /* Ajusta a altura da linha para centralizar o ícone verticalmente */
+    font-weight: bold; /* Garante que o ícone seja visível */
 }
+
 
 .menu-overlay {
     position: fixed;
@@ -101,7 +110,7 @@ h3 {
     padding: 15px;
     display: block;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 20gitpx;
 }
 
 .menu-content a:hover {
