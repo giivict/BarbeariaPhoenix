@@ -823,7 +823,7 @@ footer .contact:hover {
     /* Serviços */
 
     #services{
-        scroll-behavior: smooth;
+        transition: transform 0.5s ease-in-out;
     }
 
     #serv {
