@@ -785,6 +785,10 @@ footer .contact:hover {
         margin-top: 70px;
     }
 
+    #tittletext{
+        padding: 0;
+    }
+
     section ul {
         display: flex;
         flex-direction: column;
@@ -812,7 +816,7 @@ footer .contact:hover {
         width: 70%;
         font-size: 15px;
         padding: 20px;
-        margin: 20px auto 40px auto;
+        margin: 20px auto 0px auto;
 
     }
 
@@ -888,28 +892,33 @@ footer .contact:hover {
 
     #feedback-itens {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .fb {
 
         padding: 10px;
-        margin: 5px;
-        width: 145px;
-        height: 100px;
+        margin: 15px;
+        width: 80%;
+        height: 200px;
+    }
+
+    .fb p br{
+        display: none;
     }
 
     .fb p {
-        font-size: 6px;
+        font-size: 15px;
+        text-align: justify;
     }
 
     .fb h3 {
-        font-size: 10px;
+        font-size: 20px;
     }
 
     .fb .estrela {
-        width: 100px;
+        width: 70%;
     }
 
     .fb #star1 {
@@ -918,14 +927,14 @@ footer .contact:hover {
 
 
     .fb .star {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     #feedback h1 {
         margin-right: 40px;
-        margin-top: 20px;
+        margin-top: 40px;
         margin-bottom: 20px;
-        font-size: 10px;
+        font-size: 30px;
     }
 
     /* Footer */
