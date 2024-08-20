@@ -618,7 +618,7 @@ footer .contact:hover {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
 
     /* Menu Nav */
 
@@ -749,7 +749,7 @@ footer .contact:hover {
     }
 
     #bcgdpreto {
-        margin: 0px;
+        margin: 20px 0 0 0;
         padding: 30px;
 
     }
@@ -940,60 +940,89 @@ footer .contact:hover {
     /* Footer */
 
     footer {
-        margin: 10px 20px 30px 20px;
+       margin: 10px 20px 30px 20px;
+    }
+
+    footer #feedback{
+        display: flex;
+        flex-direction: column;
     }
 
     footer p {
-        font-size: 7px;
+        font-size: 15px;
     }
 
     footer h1 {
-        font-size: 10px;
-        padding-top: 10px;
-        padding-left: 10px;
+        font-size: 30px;
+        margin-top: 20px 0 0 0;
+       text-align: center;
+       
+       padding: 0;
     }
 
+    #footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
     footer h3 {
-        font-size: 8px;
+        font-size: 20px;
+        
 
     }
 
     footer #address {
-        width: 90%;
-        margin-left: -20px;
+      align-items: center;
+     justify-content: center;
+     text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+       
     }
 
-    footer #logofooter {
-        width: 10%;
-        margin-top: 20px;
-    }
 
 
     footer #address img {
-        width: 50%;
+        width: 90%;
 
     }
 
     footer #ct {
-        margin-top: 20px;
+        margin-top: 60px;
     }
 
 
     footer .contact {
-        margin-top: 10px;
+        margin-top: 30px;
     }
 
+ 
+
     footer .contact img {
-        width: 70px;
+        width: 50%;
+        margin: 0;
     }
 
     footer #cont {
-        padding-left: 60px;
+       margin: 30px 0 0 0;
+       
     }
 
     footer .contact:hover {
-        transform: translateY(-5px);
+        transform: none;
 
+    }
+
+    footer #logofooter {
+        width: 30%;
+        margin-top: 50px;
+    }
+
+
+    footer .ft{
+        text-align: center;
     }
 }
 
