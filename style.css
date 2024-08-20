@@ -744,41 +744,36 @@ footer .contact:hover {
     #sobre {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        text-align: center;
+        
     }
 
     #bcgdpreto {
         margin: 0px;
+        padding: 30px;
 
     }
 
     section #bcgdpreto img {
-
-        width: 50%;
-
-        margin: 10px 50px 10px 95px;
+        width: 100%;
+        margin: 5px auto 5px auto ;
     }
 
-    #sobre h1 {
-        font-size: 10px;
-        margin-left: 60px;
+    #sobre #tittletext {
+        font-size: 30px;
         text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px 0 20px 0;
     }
 
     .content {
-        font-size: 7px;
+        font-size: 15px;
         width: 90%;
         text-align: justify;
-        margin-left: 50px;
-
+        margin: 0 auto 0 auto;
+       
     }
 
-    #tittletext {
-        margin-right: 80px;
-        padding-bottom: 40px;
-    }
+
 
     /* Equipe */
 
@@ -794,6 +789,7 @@ footer .contact:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0;
 
     }
 
@@ -814,7 +810,7 @@ footer .contact:hover {
     section .text {
        
         width: 70%;
-        font-size: 20px;
+        font-size: 15px;
         padding: 20px;
         margin: 20px auto 40px auto;
 
