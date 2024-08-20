@@ -823,10 +823,6 @@ footer .contact:hover {
 
     /* Serviços */
 
-    #services{
-        transition: transform 0.5s ease-in-out;
-    }
-
     #serv {
         margin-top: 0;
         padding-bottom: 30px;
@@ -842,20 +838,31 @@ footer .contact:hover {
     }
 
     .service-list {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+        grid-template-columns: 1fr;
+        gap: 20px; /* Reduzir o espaçamento entre os serviços */
     }
 
     .service-item {
-        border-radius: 8px;
-        padding: 3px;
-        margin: 3px;
-        font-size: 12px;
-        width: 200px;
-        height: 150px;
-        
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
     }
+
+    #services {
+        overflow: hidden;
+    }
+
+    .services-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .arrow {
+        margin-top: 20px;
+    }
+}
+
 
     .arrow {
 
@@ -874,7 +881,7 @@ footer .contact:hover {
     .service-item button {
         padding: 10px;
         font-size: 12px;
-        width: 75%;
+        width: 100%;
 
     }
 

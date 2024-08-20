@@ -75,10 +75,14 @@ document.addEventListener('DOMContentLoaded', () => {
 // Serviços
 
 let currentPage = 0;
-const itemsPerPage = 6;
-const serviceList = document.querySelector('.service-list');
+let itemsPerPage;
 const services = document.querySelectorAll('.service-item');
-const totalPages = Math.ceil(services.length / itemsPerPage);
+let totalPages;
+
+function updateItemsPerPage() {
+    itemsPerPage = window.innerWidth <= 600 ? 3 : 6;
+    totalPages = Math.ceil(services.length / itemsPerPage);
+}
 
 function updateServices() {
     const start = currentPage * itemsPerPage;
@@ -90,9 +94,9 @@ function updateServices() {
             service.style.display = 'none';
         }
     });
+    
     document.getElementById('left-arrow').style.display = currentPage === 0 ? 'none' : 'block';
     document.getElementById('right-arrow').style.display = currentPage === totalPages - 1 ? 'none' : 'block';
-
 }
 
 function nextPage() {
@@ -109,6 +113,13 @@ function prevPage() {
     }
 }
 
+window.addEventListener('resize', () => {
+    updateItemsPerPage();
+    currentPage = Math.min(currentPage, totalPages - 1);
+    updateServices();
+});
+
+updateItemsPerPage();
 updateServices();
 
 function enviarMensagem(servico) {
