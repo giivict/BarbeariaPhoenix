@@ -784,24 +784,27 @@ footer .contact:hover {
 
 
     #equipe-tittle {
-        font-size: 10px;
+        font-size: 30px;
         margin-left: 20px;
         margin-bottom: 20px;
         margin-top: 70px;
     }
 
     section ul {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
     }
 
     section ul li img {
-        width: 85px;
+        width: 100%;
         margin: 0px;
     }
 
     ul li h3 {
-        font-size: 7px;
+       
+        font-size: 20px;
         text-align: center;
         margin-top: 5px;
         padding: 0;
@@ -809,16 +812,16 @@ footer .contact:hover {
     }
 
     section .text {
+       
         width: 70%;
-        font-size: 7px;
+        font-size: 20px;
         padding: 20px;
         margin: 20px auto 40px auto;
 
     }
 
     section .text img {
-        width: 15%;
-        margin-right: 30px;
+        display: none;
     }
 
     /* Serviços */
@@ -863,8 +866,6 @@ footer .contact:hover {
     .arrow {
         margin-top: 20px;
     }
-
-
 
     .arrow {
 
