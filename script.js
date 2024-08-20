@@ -88,6 +88,7 @@ function updateServices() {
     const start = currentPage * itemsPerPage;
     const end = start + itemsPerPage;
     services.forEach((service, index) => {
+        service.style.transition = 'transform 0.3s ease-in-out';  // Adiciona a transição
         if (index >= start && index < end) {
             service.style.display = 'block';
         } else {
@@ -122,12 +123,39 @@ window.addEventListener('resize', () => {
 updateItemsPerPage();
 updateServices();
 
+// Funções de swipe (deslizar com o touch)
+let touchStartX = 0;
+let touchEndX = 0;
+
+function handleTouchStart(event) {
+    touchStartX = event.touches[0].clientX;
+}
+
+function handleTouchMove(event) {
+    touchEndX = event.touches[0].clientX;
+}
+
+function handleTouchEnd() {
+    if (touchEndX < touchStartX - 50) { // Deslizar para a esquerda
+        nextPage();
+    } else if (touchEndX > touchStartX + 50) { // Deslizar para a direita
+        prevPage();
+    }
+}
+
+const servicesWrapper = document.querySelector('.services-wrapper');
+
+servicesWrapper.addEventListener('touchstart', handleTouchStart, false);
+servicesWrapper.addEventListener('touchmove', handleTouchMove, false);
+servicesWrapper.addEventListener('touchend', handleTouchEnd, false);
+
 function enviarMensagem(servico) {
     const numeroTelefone = '5511964538195';
     const mensagem = `Olá, gostaria de marcar um horário para realizar ${servico}`;
     const link = `https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagem)}`;
     window.open(link, '_blank');
 }
+
 
 
 
