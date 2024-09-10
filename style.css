@@ -1050,8 +1050,7 @@ footer .contact:hover {
 
     #bcgddentro {
         width: 120%;
-        margin-right: 1%;
-        margin-left: -10%;
+        margin-left: -9.4%;
     }
 
     header #bcgdcinza {
@@ -1154,13 +1153,13 @@ footer .contact:hover {
     #serv {
         margin-top: 0;
         padding-bottom: 30px;
-        margin-left: 2%;
+        margin-left: 3%;
         margin-right: 2%;
 
     }
 
     .service-list {
-        gap: 29px;
+        gap: 20px;
     }
 
     .arrow {
@@ -1178,9 +1177,9 @@ footer .contact:hover {
     }
 
     .service-item button {
-        padding: 4px;
-        font-size: 5px;
-        width: 65%;
+        padding: 7px;
+        font-size: 10px;
+        width: 100%;
 
     }
 

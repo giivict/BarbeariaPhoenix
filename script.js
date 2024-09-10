@@ -52,13 +52,13 @@ function currentSlide(index) {
     showImage(index);
 }
 
-setInterval(showNextImage, 3000); // Muda a cada 3 segundos
+setInterval(showNextImage, 3000); 
 
-// Inicializa a primeira imagem como visível quando a página carrega
+
 document.addEventListener('DOMContentLoaded', () => {
     showImage(0);
 
-    // Configura o Hammer.js para detectar gestos de swipe
+    
     const carousel = document.querySelector('.carousel-container');
     const hammer = new Hammer(carousel);
 
@@ -88,7 +88,7 @@ function updateServices() {
     const start = currentPage * itemsPerPage;
     const end = start + itemsPerPage;
     services.forEach((service, index) => {
-        service.style.transition = 'transform 0.3s ease-in-out';  // Adiciona a transição
+        service.style.transition = 'transform 0.3s ease-in-out';  
         if (index >= start && index < end) {
             service.style.display = 'block';
         } else {
@@ -123,7 +123,7 @@ window.addEventListener('resize', () => {
 updateItemsPerPage();
 updateServices();
 
-// Funções de swipe (deslizar com o touch)
+
 let touchStartX = 0;
 let touchEndX = 0;
 
@@ -136,9 +136,9 @@ function handleTouchMove(event) {
 }
 
 function handleTouchEnd() {
-    if (touchEndX < touchStartX - 50) { // Deslizar para a esquerda
+    if (touchEndX < touchStartX - 50) { 
         nextPage();
-    } else if (touchEndX > touchStartX + 50) { // Deslizar para a direita
+    } else if (touchEndX > touchStartX + 50) { 
         prevPage();
     }
 }
